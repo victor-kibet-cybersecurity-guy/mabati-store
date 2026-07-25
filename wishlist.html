@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Wishlist – ROYAL MABATI FACTORY LTD</title>
+  <meta name="description" content="View and manage your saved roofing products at ROYAL MABATI FACTORY LTD. Move items to cart or enquire via WhatsApp." />
+  <meta name="keywords" content="wishlist, mabati, roofing sheets, royal mabati, Kenya" />
+  <meta name="author" content="ROYAL MABATI FACTORY LTD" />
+  <link rel="canonical" href="https://royalmabati.co.ke/wishlist.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="My Wishlist – ROYAL MABATI FACTORY LTD" />
+  <meta property="og:description" content="Save your favourite roofing products and easily move them to your cart." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://royalmabati.co.ke/wishlist.html" />
+  <meta property="og:image" content="https://royalmabati.co.ke/assets/images/og-image.jpg" />
+  <meta property="og:site_name" content="ROYAL MABATI FACTORY LTD" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="My Wishlist – ROYAL MABATI FACTORY LTD" />
+  <meta name="twitter:description" content="Save your favourite roofing products and easily move them to your cart." />
+  <meta name="twitter:image" content="https://royalmabati.co.ke/assets/images/og-image.jpg" />
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ROYAL MABATI FACTORY LTD",
+      "url": "https://royalmabati.co.ke",
+      "logo": "https://royalmabati.co.ke/assets/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+254-752-523422",
+        "contactType": "Sales",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://www.facebook.com/royalmabati",
+        "https://twitter.com/royalmabati",
+        "https://www.instagram.com/royalmabati"
+      ]
+    }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome (if not already in style.css) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+  ============================================================ -->
+  <header id="site-header" class="site-header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="ROYAL MABATI FACTORY LTD - Roofing Solutions" width="180" height="60" />
+        </a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Utility Icons: Wishlist & Cart -->
+      <div class="header-utilities">
+        <a href="wishlist.html" class="wishlist-icon" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="wishlist-count" data-wishlist-count>0</span>
+        </a>
+        <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge" id="cart-count" data-cart-count>0</span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main-content">
+    <section class="wishlist-page">
+      <div class="container">
+
+        <!-- Page Header -->
+        <div class="wishlist-header">
+          <h1>My Wishlist</h1>
+          <div class="wishlist-actions">
+            <button id="move-all-to-cart" class="btn btn-secondary btn-sm">
+              <i class="fa-solid fa-arrow-right"></i> Move All to Cart
+            </button>
+            <button id="clear-wishlist" class="btn btn-outline-danger btn-sm">
+              <i class="fa-regular fa-trash-can"></i> Clear All
+            </button>
+          </div>
+        </div>
+
+        <!-- Wishlist Grid Container -->
+        <div id="wishlist-content">
+          <div id="wishlist-items" class="wishlist-grid">
+            <!-- Items will be rendered by wishlist.js -->
+          </div>
+        </div>
+
+        <!-- Empty State (hidden by default) -->
+        <div id="empty-wishlist" hidden>
+          <div class="empty-state">
+            <i class="fa-regular fa-heart"></i>
+            <h2>Your wishlist is empty</h2>
+            <p>Save your favourite mabati profiles, colours and roofing accessories here.</p>
+            <a href="products.html" class="btn btn-primary">Browse Products</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FLOATING ACTION BUTTONS (WhatsApp & Call)
+  ============================================================ -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/254752523422?text=Hello%20ROYAL%20MABATI%20FACTORY%20LTD%2C%20I%20have%20a%20question%20about%20your%20roofing%20products." 
+       target="_blank" rel="noopener noreferrer" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+254752523422" class="floating-btn call-btn" aria-label="Call us">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo-white.png" alt="ROYAL MABATI FACTORY LTD" width="150" height="50" />
+        <p>Quality roofing solutions for every project.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <address>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+254752523422">0752 523422</a></p>
+          <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/254752523422">0752 523422</a></p>
+          <p><i class="fa-regular fa-envelope"></i> <a href="mailto:info@royalmabati.co.ke">info@royalmabati.co.ke</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <strong>ROYAL MABATI FACTORY LTD</strong>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <!-- Product data (must be defined before app.js) -->
+  <script src="js/products.js"></script>
+
+  <!-- Core app (handles global UI, wishlist toggles, etc.) -->
+  <script src="js/app.js"></script>
+
+  <!-- Cart logic -->
+  <script src="js/cart.js"></script>
+
+  <!-- Wishlist logic (uses the above) -->
+  <script src="js/wishlist.js"></script>
+
+  <!-- Mobile menu toggle (simple fallback) -->
+  <script>
+    (function() {
+      const toggle = document.querySelector('.mobile-menu-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+      if (toggle && mobileNav) {
+        toggle.addEventListener('click', function() {
+          const expanded = this.getAttribute('aria-expanded') === 'true' ? false : true;
+          this.setAttribute('aria-expanded', expanded);
+          mobileNav.hidden = !expanded;
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
