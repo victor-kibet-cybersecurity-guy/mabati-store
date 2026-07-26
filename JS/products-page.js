@@ -1,13 +1,3 @@
-from pathlib import Path
-
-code = r'''"use strict";
-
-/* ==========================================================
-   ROYAL MABATI FACTORY LTD
-   Products Catalogue Page
-   File: js/products-page.js
-   ========================================================== */
-
 (() => {
   const PRODUCTS_PER_PAGE = 12;
 
@@ -795,20 +785,6 @@ code = r'''"use strict";
 
   function initializeProductActions() {
     document.addEventListener("click", (event) => {
-      const cartButton = event.target.closest("[data-add-cart-id]");
-
-      if (cartButton) {
-        const productId = cartButton.dataset.addCartId;
-
-        if (typeof window.addProductToCart === "function") {
-          window.addProductToCart(productId);
-        } else {
-          console.error("addProductToCart is unavailable.");
-        }
-
-        return;
-      }
-
       const wishlistButton = event.target.closest(
         "[data-wishlist-id]"
       );
@@ -908,9 +884,3 @@ code = r'''"use strict";
     initializeProductsPage();
   }
 })();
-'''
-
-path = Path("/mnt/data/products-page.js")
-path.write_text(code, encoding="utf-8")
-print(f"Created {path}")
-print(f"Lines: {len(code.splitlines())}")

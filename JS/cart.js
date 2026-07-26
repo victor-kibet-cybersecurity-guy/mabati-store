@@ -200,7 +200,7 @@
         "error"
       );
 
-      return;
+      return false;
     }
 
     if (
@@ -212,7 +212,7 @@
         "warning"
       );
 
-      return;
+      return false;
     }
 
     const quantity = Math.max(
@@ -262,6 +262,8 @@
       `${product.name} added to cart.`,
       "success"
     );
+
+    return true;
   }
 
   function createCartItemId(productId) {

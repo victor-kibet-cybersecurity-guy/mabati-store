@@ -1162,7 +1162,7 @@
 
     if (
       wishlistButton &&
-      typeof window.showToast !== "function"
+      !wishlistButton.closest("#products-grid")
     ) {
       toggleWishlist(
         wishlistButton.dataset.wishlistId
@@ -1224,6 +1224,10 @@
 
   window.toggleRoyalMabatiWishlist =
     toggleWishlist;
+
+  /* Compatibility aliases used by products-page.js */
+  window.toggleWishlist = toggleWishlist;
+  window.updateWishlistButtons = updateWishlistButtons;
 
   window.clearRoyalMabatiWishlist =
     clearWishlist;
