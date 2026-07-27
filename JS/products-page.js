@@ -14,6 +14,8 @@
     sort: "featured"
   };
 
+  const comparisonIds = new Set();
+
   const selectors = {
     grid: "#products-grid",
     resultsCount: "#product-results-count",
@@ -111,6 +113,7 @@
     return [
       product.name,
       product.category,
+      product.categoryName,
       product.subcategory,
       product.description,
       product.finish,
@@ -205,11 +208,11 @@
       }
 
       if (filter === "sale") {
-        return Boolean(product.sale) || getDiscount(product) > 0;
+        return Boolean(product.onSale) || getDiscount(product) > 0;
       }
 
       if (filter === "freeDelivery") {
-        return Boolean(product.freeDelivery);
+        return product.freeDelivery !== false;
       }
 
       return true;
@@ -332,6 +335,7 @@
               loading="lazy"
               width="500"
               height="400"
+              onerror="this.onerror=null;this.src=\'images/favicon.png\';"
             >
           </a>
 
@@ -383,7 +387,7 @@
         <div class="product-content">
 
           <p class="product-category">
-            ${escapeHTML(product.category || "Mabati")}
+            ${escapeHTML(product.categoryName || product.category || "Mabati")}
           </p>
 
           <h3 class="product-title">
@@ -452,7 +456,6 @@
           </p>
 
           <div class="product-actions">
-
             <button
               type="button"
               class="add-to-cart-button"
@@ -472,7 +475,21 @@
             >
               <i class="fa-regular fa-heart"></i>
             </button>
+          </div>
 
+          <div class="product-secondary-actions">
+            <a href="${productUrl}" class="btn btn-outline btn-sm">
+              <i class="fa-regular fa-eye"></i> View Details
+            </a>
+            ${
+              !["roofing-accessories", "nails-fasteners"].includes(product.category)
+                ? `
+                  <button type="button" class="btn btn-dark btn-sm" data-compare-id="${escapeHTML(product.id)}">
+                    <i class="fa-solid fa-code-compare"></i> Compare
+                  </button>
+                `
+                : ""
+            }
           </div>
 
           <a
@@ -548,6 +565,8 @@
     } else {
       syncWishlistButtons();
     }
+
+    updateComparisonDock();
   }
 
   function updateResultsCount() {
@@ -783,6 +802,96 @@
     });
   }
 
+
+  function updateComparisonDock() {
+    const dock = select("#comparison-dock");
+    const count = select("#comparison-count");
+    if (!dock || !count) return;
+
+    dock.hidden = comparisonIds.size === 0;
+    count.textContent = `${comparisonIds.size} product${comparisonIds.size === 1 ? "" : "s"} selected`;
+
+    selectAll("[data-compare-id]").forEach((button) => {
+      const active = comparisonIds.has(button.dataset.compareId);
+      button.classList.toggle("active", active);
+      button.innerHTML = active
+        ? '<i class="fa-solid fa-check"></i> Selected'
+        : '<i class="fa-solid fa-code-compare"></i> Compare';
+    });
+  }
+
+  function toggleComparison(productId) {
+    if (comparisonIds.has(productId)) {
+      comparisonIds.delete(productId);
+    } else {
+      if (comparisonIds.size >= 3) {
+        window.showToast?.("You can compare up to 3 products.", "warning");
+        return;
+      }
+      comparisonIds.add(productId);
+    }
+    updateComparisonDock();
+  }
+
+  function openComparison() {
+    if (comparisonIds.size < 2) {
+      window.showToast?.("Select at least 2 products to compare.", "info");
+      return;
+    }
+
+    const products = [...comparisonIds]
+      .map((id) => state.products.find((product) => product.id === id))
+      .filter(Boolean);
+
+    const modal = select("#comparison-modal");
+    const content = select("#comparison-content");
+    if (!modal || !content) return;
+
+    content.innerHTML = `
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              ${products.map((product) => `<th>${escapeHTML(product.name)}</th>`).join("")}
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th>Price</th>${products.map((product) => `<td>${formatMoney(product.price)} ${escapeHTML(product.priceUnit || "")}</td>`).join("")}</tr>
+            <tr><th>Gauge</th>${products.map((product) => `<td>${escapeHTML(getProductGauges(product).join(", ") || "N/A")}</td>`).join("")}</tr>
+            <tr><th>Finish</th>${products.map((product) => `<td>${escapeHTML(product.finish || "Standard")}</td>`).join("")}</tr>
+            <tr><th>Profile</th>${products.map((product) => `<td>${escapeHTML(product.categoryName || product.category)}</td>`).join("")}</tr>
+            <tr><th>Stock</th>${products.map((product) => `<td>${escapeHTML(product.stockStatus || "Confirm")}</td>`).join("")}</tr>
+            <tr><th>Best for</th>${products.map((product) => `<td>${escapeHTML((product.applications || []).slice(0, 3).join(", "))}</td>`).join("")}</tr>
+          </tbody>
+        </table>
+      </div>
+    `;
+
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("menu-open");
+  }
+
+  function closeComparison() {
+    const modal = select("#comparison-modal");
+    modal?.classList.remove("active");
+    modal?.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("menu-open");
+  }
+
+  function initializeComparison() {
+    select("#open-comparison")?.addEventListener("click", openComparison);
+    select("#clear-comparison")?.addEventListener("click", () => {
+      comparisonIds.clear();
+      updateComparisonDock();
+    });
+    select("#comparison-close")?.addEventListener("click", closeComparison);
+    select("#comparison-modal")?.addEventListener("click", (event) => {
+      if (event.target.id === "comparison-modal") closeComparison();
+    });
+  }
+
   function initializeProductActions() {
     document.addEventListener("click", (event) => {
       const wishlistButton = event.target.closest(
@@ -799,6 +908,13 @@
           console.error("toggleWishlist is unavailable.");
         }
 
+        return;
+      }
+
+      const compareButton = event.target.closest("[data-compare-id]");
+
+      if (compareButton) {
+        toggleComparison(compareButton.dataset.compareId);
         return;
       }
 
@@ -843,21 +959,24 @@
 
   function initializeProductsPage() {
     if (!Array.isArray(window.PRODUCTS)) {
-      const grid = select(selectors.grid);
+      const attempts = Number(document.body.dataset.productLoadAttempts || 0);
+      if (attempts < 10) {
+        document.body.dataset.productLoadAttempts = String(attempts + 1);
+        window.setTimeout(initializeProductsPage, 150);
+        return;
+      }
 
+      const grid = select(selectors.grid);
       if (grid) {
         grid.innerHTML = `
           <div class="empty-state" style="grid-column: 1 / -1;">
             <i class="fa-solid fa-box-open"></i>
             <h2>Products could not be loaded</h2>
-            <p>
-              Confirm that <strong>js/products.js</strong>
-              loads before <strong>js/products-page.js</strong>.
-            </p>
+            <p>Refresh the page or check your internet connection.</p>
+            <button type="button" class="btn btn-primary" onclick="window.location.reload()">Reload Products</button>
           </div>
         `;
       }
-
       return;
     }
 
@@ -871,6 +990,7 @@
     initializeProductActions();
     initializeLoadMore();
     initializeResetButtons();
+    initializeComparison();
 
     applyFilters();
   }

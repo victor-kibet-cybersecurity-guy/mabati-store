@@ -2,6 +2,7 @@
 <html lang="en-KE">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#9b1c1c">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -80,6 +81,9 @@
     name="twitter:image"
     content="https://www.example.com/images/banners/hero-roofing.jpg"
   >
+
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
   <link
     rel="preconnect"
@@ -265,6 +269,7 @@
           <span
             class="counter-badge"
             id="wishlist-count"
+            data-wishlist-count
             aria-label="Wishlist item count"
           >
             0
@@ -284,6 +289,7 @@
           <span
             class="counter-badge"
             id="cart-count"
+            data-cart-count
             aria-label="Cart item count"
           >
             0
@@ -597,6 +603,44 @@
               availability, final sheet measurements, and delivery
               details must be confirmed before payment.
             </p>
+
+            
+            <div class="checkout-customer-card">
+              <h3><i class="fa-solid fa-user-check"></i> Checkout details</h3>
+
+              <form id="checkout-customer-form" class="checkout-customer-form" novalidate>
+                <label>
+                  <span>Full name</span>
+                  <input type="text" id="checkout-name" autocomplete="name" required>
+                </label>
+
+                <label>
+                  <span>Phone number</span>
+                  <input type="tel" id="checkout-phone" autocomplete="tel" placeholder="07XXXXXXXX" required>
+                </label>
+
+                <label>
+                  <span>County</span>
+                  <input type="text" id="checkout-county" placeholder="Example: Nairobi" required>
+                </label>
+
+                <label>
+                  <span>Town / delivery location</span>
+                  <input type="text" id="checkout-location" placeholder="Town, estate or landmark" required>
+                </label>
+
+                <label class="checkout-full-width">
+                  <span>Additional instructions</span>
+                  <textarea id="checkout-instructions" placeholder="Preferred delivery date, road access, unloading details..."></textarea>
+                </label>
+              </form>
+
+              <div class="secure-checkout-note">
+                <i class="fa-solid fa-lock"></i>
+                <span>Your cart is sent through WhatsApp for final stock, delivery and payment confirmation.</span>
+              </div>
+            </div>
+
 
             <button
               type="button"
@@ -986,32 +1030,32 @@
             aria-label="Product category links"
           >
 
-            <a href="products.html?category=Box%20Profile">
+            <a href="products.html?category=box-profile">
               Box Profile Mabati
             </a>
 
-            <a href="products.html?category=Corrugated%20Profile">
+            <a href="products.html?category=corrugated">
               Corrugated Mabati
             </a>
 
-            <a href="products.html?category=Tile%20Profile">
+            <a href="products.html?category=roman-tile">
               Tile Profile Mabati
             </a>
 
-            <a href="products.html?category=Roman%20Tile">
+            <a href="products.html?category=roman-tile">
               Roman Tile Mabati
             </a>
 
-            <a href="products.html?category=Versatile">
+            <a href="products.html?category=versatile">
               Versatile Mabati
             </a>
 
-            <a href="products.html?category=Stone-Coated%20Tiles">
+            <a href="products.html?category=stone-coated">
               Stone-Coated Tiles
             </a>
 
-            <a href="products.html?category=Aluzinc%20Sheets">
-              Aluzinc Sheets
+            <a href="products.html?category=dumuzaz">
+              Ordinary Dumuzaz
             </a>
 
             <a href="accessories.html">
@@ -1255,5 +1299,6 @@
     defer
   ></script>
 
+  <script src="js/store-enhancements.js" defer></script>
 </body>
 </html>

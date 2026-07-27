@@ -487,16 +487,13 @@
 
     if (countElement) {
       countElement.textContent = String(totalItems);
-
       countElement.setAttribute(
         "aria-label",
-        `${totalItems} item${
-          totalItems === 1 ? "" : "s"
-        } in cart`
+        `${totalItems} item${totalItems === 1 ? "" : "s"} in cart`
       );
     }
 
-    selectAll("[data-cart-count]").forEach(
+    selectAll("#cart-count, [data-cart-count]").forEach(
       (element) => {
         element.textContent = String(totalItems);
       }

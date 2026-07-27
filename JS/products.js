@@ -1,15 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   ROYAL MABATI FACTORY LTD
-   Product Database
-   File: js/products.js
-
-   Important:
-   - Prices below are sample website prices.
-   - Update them whenever your selling prices change.
-   - Product images should be placed inside assets/images/products/.
-   ========================================================== */
+/* ROYAL MABATI FACTORY LTD - Updated product database */
 
 const BUSINESS_DETAILS = {
   name: "ROYAL MABATI FACTORY LTD",
@@ -22,78 +13,68 @@ const BUSINESS_DETAILS = {
   minimumOrder: 20
 };
 
-/* ==========================================================
-   PRODUCT CATEGORIES
-   ========================================================== */
-
 const PRODUCT_CATEGORIES = [
   {
-    id: "box-profile",
-    name: "Box Profile Mabati",
-    description:
-      "Strong, modern roofing sheets suitable for residential, commercial and industrial buildings."
+    "id": "box-profile",
+    "name": "Box Profile Mabati",
+    "description": "Modern box-profile roofing in 28G and 30G, glossy and matte finishes."
   },
   {
-    id: "tile-profile",
-    name: "Tile Profile Mabati",
-    description:
-      "Elegant roofing sheets designed to provide the appearance of traditional roofing tiles."
+    "id": "dumuzaz",
+    "name": "Ordinary Dumuzaz Mabati",
+    "description": "Affordable ordinary iron sheets in 28G and 30G."
   },
   {
-    id: "corrugated",
-    name: "Corrugated Mabati",
-    description:
-      "Reliable corrugated roofing sheets for homes, shops, farms and construction projects."
+    "id": "corrugated",
+    "name": "Corrugated Mabati",
+    "description": "Traditional corrugated roofing sheets in glossy and matte finishes."
   },
   {
-    id: "stone-coated",
-    name: "Stone Coated Roofing",
-    description:
-      "Premium stone-coated roofing tiles offering durability, beauty and weather resistance."
+    "id": "versatile",
+    "name": "Versatile Mabati",
+    "description": "Elegant stepped roofing profile for homes and institutions."
   },
   {
-    id: "transparent-sheets",
-    name: "Transparent Roofing Sheets",
-    description:
-      "Daylight roofing sheets suitable for warehouses, walkways, patios and industrial buildings."
+    "id": "roman-tile",
+    "name": "Roman Tile Mabati",
+    "description": "Decorative Roman tile roofing in 28G and 30G."
   },
   {
-    id: "roofing-accessories",
-    name: "Roofing Accessories",
-    description:
-      "Ridges, valleys, gutters, flashings, roofing nails and other installation accessories."
+    "id": "stone-coated",
+    "name": "Stone Coated Tiles",
+    "description": "Premium stone-coated roofing tiles."
+  },
+  {
+    "id": "roofing-accessories",
+    "name": "Roofing Accessories",
+    "description": "Ridges, valleys, gutters, downpipes and fittings."
+  },
+  {
+    "id": "nails-fasteners",
+    "name": "Nails and Fasteners",
+    "description": "Roofing nails and ordinary construction nails."
   }
 ];
 
-/* ==========================================================
-   PRODUCT DATABASE
-   ========================================================== */
-
 const PRODUCTS = [
   {
-    id: "royal-box-profile-30g",
-    slug: "royal-box-profile-30g",
-    name: "Royal Box Profile 30G",
-    category: "box-profile",
-    categoryName: "Box Profile Mabati",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Strong and attractive box profile roofing sheet suitable for homes, shops and commercial buildings.",
-
-    description:
-      "Royal Box Profile 30G is manufactured for durability, strength and an attractive modern finish. It is suitable for residential houses, schools, churches, warehouses and commercial buildings.",
-
-    price: 650,
-    oldPrice: 720,
-    priceUnit: "per metre",
-    priceNote:
-      "Price may vary depending on colour, gauge, coating and order quantity.",
-
-    gauge: ["30", "28", "26"],
-    defaultGauge: "30",
-
-    availableLengths: [
+    "id": "box-profile-30g-glossy",
+    "slug": "box-profile-30g-glossy",
+    "name": "Box Profile Iron Sheet 30G",
+    "category": "box-profile",
+    "categoryName": "Box Profile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Affordable glossy box profile roofing sheet for homes, shops, schools and commercial buildings.",
+    "description": "Glossy Box Profile 30G roofing sheet with a modern profile, colour-coated steel finish and custom lengths.",
+    "price": 350,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Glossy finish. Confirm colour, length and current stock before ordering.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
       1.5,
       2,
       2.5,
@@ -113,85 +94,137 @@ const PRODUCTS = [
       11,
       12
     ],
-
-    effectiveWidth: 1,
-    totalWidth: 1.05,
-
-    colours: [
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
       "Brick Red",
       "Charcoal Grey",
-      "Chocolate Brown",
       "Forest Green",
-      "Tile Red",
-      "Sky Blue",
-      "Maroon"
+      "Coffee Brown",
+      "Maroon",
+      "Blue"
     ],
-
-    finish: "Glossy",
-    coating: "Pre-painted galvanized steel",
-
-    image: "assets/images/products/box-profile-30g.jpg",
-
-    gallery: [
-      "assets/images/products/box-profile-30g.jpg",
-      "assets/images/products/box-profile-red.jpg",
-      "assets/images/products/box-profile-grey.jpg"
+    "finish": "Glossy",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/box-profile-30g.jpg",
+    "gallery": [
+      "assets/images/products/box-profile-30g.jpg"
     ],
-
-    features: [
-      "Strong box profile design",
-      "Weather resistant coating",
-      "Available in custom lengths",
-      "Multiple colour options",
-      "Suitable for residential and commercial roofing"
+    "features": [
+      "Modern box profile",
+      "Custom lengths",
+      "Glossy colour finish",
+      "Affordable 30G option"
     ],
-
-    applications: [
-      "Residential houses",
-      "Warehouses",
+    "applications": [
+      "Homes",
       "Schools",
-      "Churches",
+      "Shops",
+      "Warehouses"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 86,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "box-profile-28g-glossy",
+    "slug": "box-profile-28g-glossy",
+    "name": "Box Profile Iron Sheet 28G",
+    "category": "box-profile",
+    "categoryName": "Box Profile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Stronger glossy box profile roofing sheet for durable long-term roofing.",
+    "description": "Box Profile 28G is thicker and stronger than 30G, making it suitable for demanding residential and commercial projects.",
+    "price": 400,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Glossy finish. Gauge 28 offers greater strength and durability.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Forest Green",
+      "Coffee Brown",
+      "Maroon",
+      "Blue"
+    ],
+    "finish": "Glossy",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/box-profile-28g.jpg",
+    "gallery": [
+      "assets/images/products/box-profile-28g.jpg"
+    ],
+    "features": [
+      "Thicker 28G steel",
+      "Modern profile",
+      "Custom lengths",
+      "Long-term roofing"
+    ],
+    "applications": [
+      "Homes",
+      "Schools",
+      "Warehouses",
       "Commercial buildings"
     ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: true,
-    bestseller: true,
-    onSale: true,
-    rating: 4.9,
-    reviewCount: 86,
-
-    seoTitle:
-      "Royal Box Profile 30G Mabati Price in Kenya",
-    seoDescription:
-      "Buy Royal Box Profile 30G roofing sheets from ROYAL MABATI FACTORY LTD with free countrywide delivery."
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 74,
+    "warranty": "Confirm product-specific warranty terms before purchase."
   },
-
   {
-    id: "royal-box-profile-28g",
-    slug: "royal-box-profile-28g",
-    name: "Royal Box Profile 28G",
-    category: "box-profile",
-    categoryName: "Box Profile Mabati",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Heavy-duty box profile roofing sheet offering improved strength and long-term performance.",
-
-    description:
-      "Royal Box Profile 28G is a thicker and stronger roofing option designed for customers who require increased durability and structural performance.",
-
-    price: 850,
-    oldPrice: 920,
-    priceUnit: "per metre",
-    priceNote:
-      "Contact us to confirm the current price and available colours.",
-
-    gauge: ["28"],
-    defaultGauge: "28",
-
-    availableLengths: [
+    "id": "dumuzaz-30g-glossy",
+    "slug": "dumuzaz-30g-glossy",
+    "name": "Ordinary Dumuzaz Iron Sheet 30G",
+    "category": "dumuzaz",
+    "categoryName": "Ordinary Dumuzaz Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Economical ordinary Dumuzaz roofing sheet for budget-conscious roofing projects.",
+    "description": "Ordinary Dumuzaz 30G is an affordable roofing option for homes, sheds, shops, farm buildings and temporary structures.",
+    "price": 250,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Glossy or standard finish depending on available stock.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
       1.5,
       2,
       2.5,
@@ -211,83 +244,62 @@ const PRODUCTS = [
       11,
       12
     ],
-
-    effectiveWidth: 1,
-    totalWidth: 1.05,
-
-    colours: [
+    "effectiveWidth": 0.85,
+    "totalWidth": 0.9,
+    "colours": [
       "Brick Red",
       "Charcoal Grey",
-      "Chocolate Brown",
       "Forest Green",
-      "Maroon"
+      "Coffee Brown",
+      "Blue",
+      "Natural Silver"
     ],
-
-    finish: "Glossy",
-    coating: "Pre-painted galvanized steel",
-
-    image: "assets/images/products/box-profile-28g.jpg",
-
-    gallery: [
-      "assets/images/products/box-profile-28g.jpg",
-      "assets/images/products/box-profile-28g-red.jpg",
-      "assets/images/products/box-profile-28g-grey.jpg"
+    "finish": "Glossy",
+    "coating": "Colour-coated or galvanized steel",
+    "image": "assets/images/products/dumuzaz-30g.jpg",
+    "gallery": [
+      "assets/images/products/dumuzaz-30g.jpg"
     ],
-
-    features: [
-      "Heavy-duty 28 gauge steel",
-      "Improved structural strength",
-      "Custom-cut lengths",
-      "Long-lasting coating",
-      "Suitable for demanding roofing projects"
+    "features": [
+      "Lowest-cost roofing option",
+      "Custom lengths",
+      "Easy installation",
+      "Available in popular colours"
     ],
-
-    applications: [
-      "Large residential homes",
-      "Warehouses",
-      "Factories",
-      "Schools",
-      "Commercial properties"
+    "applications": [
+      "Budget homes",
+      "Farm structures",
+      "Shops",
+      "Sheds"
     ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: true,
-    bestseller: false,
-    onSale: true,
-    rating: 4.8,
-    reviewCount: 54,
-
-    seoTitle:
-      "Royal Box Profile 28G Roofing Sheets Kenya",
-    seoDescription:
-      "Order Royal Box Profile 28G roofing sheets from ROYAL MABATI FACTORY LTD with free delivery in Kenya."
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.6,
+    "reviewCount": 64,
+    "warranty": "Confirm warranty availability for the selected coating and finish."
   },
-
   {
-    id: "royal-matte-box-profile",
-    slug: "royal-matte-box-profile",
-    name: "Royal Matte Box Profile",
-    category: "box-profile",
-    categoryName: "Box Profile Mabati",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Premium matte-finish box profile roofing sheet with a modern, elegant appearance.",
-
-    description:
-      "Royal Matte Box Profile combines the strength of box profile roofing with a premium non-reflective matte finish. It is ideal for modern homes and commercial projects.",
-
-    price: 750,
-    oldPrice: 820,
-    priceUnit: "per metre",
-    priceNote:
-      "Final price depends on selected gauge, colour and order quantity.",
-
-    gauge: ["30", "28"],
-    defaultGauge: "30",
-
-    availableLengths: [
+    "id": "dumuzaz-28g-glossy",
+    "slug": "dumuzaz-28g-glossy",
+    "name": "Ordinary Dumuzaz Iron Sheet 28G",
+    "category": "dumuzaz",
+    "categoryName": "Ordinary Dumuzaz Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "A thicker ordinary Dumuzaz sheet offering improved durability at an affordable price.",
+    "description": "Ordinary Dumuzaz 28G provides better strength than 30G while maintaining an economical price.",
+    "price": 300,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Gauge 28 is thicker and more durable than Gauge 30.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [
       1.5,
       2,
       2.5,
@@ -307,267 +319,566 @@ const PRODUCTS = [
       11,
       12
     ],
-
-    effectiveWidth: 1,
-    totalWidth: 1.05,
-
-    colours: [
+    "effectiveWidth": 0.85,
+    "totalWidth": 0.9,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Forest Green",
+      "Coffee Brown",
+      "Blue",
+      "Natural Silver"
+    ],
+    "finish": "Glossy",
+    "coating": "Colour-coated or galvanized steel",
+    "image": "assets/images/products/dumuzaz-28g.jpg",
+    "gallery": [
+      "assets/images/products/dumuzaz-28g.jpg"
+    ],
+    "features": [
+      "Stronger 28G sheet",
+      "Affordable",
+      "Custom lengths",
+      "Easy installation"
+    ],
+    "applications": [
+      "Homes",
+      "Farm structures",
+      "Shops",
+      "Schools"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 55,
+    "warranty": "Confirm warranty availability for the selected coating and finish."
+  },
+  {
+    "id": "corrugated-30g-glossy",
+    "slug": "corrugated-30g-glossy",
+    "name": "Corrugated Iron Sheet 30G",
+    "category": "corrugated",
+    "categoryName": "Corrugated Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Affordable corrugated roofing sheet for homes, farms, workshops and general construction.",
+    "description": "Corrugated 30G combines a traditional wave profile with affordable pricing and custom lengths.",
+    "price": 300,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Glossy finish. Confirm available colours and lengths.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "effectiveWidth": 0.85,
+    "totalWidth": 0.9,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Forest Green",
+      "Coffee Brown",
+      "Blue",
+      "Natural Silver"
+    ],
+    "finish": "Glossy",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/corrugated-30g.jpg",
+    "gallery": [
+      "assets/images/products/corrugated-30g.jpg"
+    ],
+    "features": [
+      "Traditional corrugated profile",
+      "Affordable",
+      "Custom lengths",
+      "Good water drainage"
+    ],
+    "applications": [
+      "Homes",
+      "Farm buildings",
+      "Workshops",
+      "Shops"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 91,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "corrugated-28g-glossy",
+    "slug": "corrugated-28g-glossy",
+    "name": "Corrugated Iron Sheet 28G",
+    "category": "corrugated",
+    "categoryName": "Corrugated Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Strong corrugated 28G roofing sheet for durable residential and commercial roofing.",
+    "description": "Corrugated 28G offers greater thickness and durability for long-term roofing applications.",
+    "price": 350,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Gauge 28 is stronger and more durable than Gauge 30.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "effectiveWidth": 0.85,
+    "totalWidth": 0.9,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Forest Green",
+      "Coffee Brown",
+      "Blue",
+      "Natural Silver"
+    ],
+    "finish": "Glossy",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/corrugated-28g.jpg",
+    "gallery": [
+      "assets/images/products/corrugated-28g.jpg"
+    ],
+    "features": [
+      "Thicker 28G steel",
+      "Traditional profile",
+      "Custom lengths",
+      "Durable roofing"
+    ],
+    "applications": [
+      "Homes",
+      "Schools",
+      "Warehouses",
+      "Commercial buildings"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 52,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "versatile-30g-glossy",
+    "slug": "versatile-30g-glossy",
+    "name": "Versatile Iron Sheet 30G",
+    "category": "versatile",
+    "categoryName": "Versatile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Stylish stepped roofing profile for attractive homes and institutional projects.",
+    "description": "Versatile 30G provides an elegant tiled appearance with the affordability and convenience of steel roofing.",
+    "price": 580,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Glossy finish. Custom lengths and popular colours available.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Forest Green",
+      "Coffee Brown",
+      "Maroon"
+    ],
+    "finish": "Glossy",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/royal-versa-tile.jpg",
+    "gallery": [
+      "assets/images/products/royal-versa-tile.jpg"
+    ],
+    "features": [
+      "Elegant stepped profile",
+      "Custom lengths",
+      "Glossy finish",
+      "Residential appeal"
+    ],
+    "applications": [
+      "Homes",
+      "Hotels",
+      "Schools",
+      "Churches"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 72,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "versatile-28g-glossy",
+    "slug": "versatile-28g-glossy",
+    "name": "Versatile Iron Sheet 28G",
+    "category": "versatile",
+    "categoryName": "Versatile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Premium thicker versatile roofing sheet for strong, elegant long-term roofing.",
+    "description": "Versatile 28G combines a premium stepped appearance with improved strength and durability.",
+    "price": 600,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Glossy finish. Gauge 28 provides improved strength.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Forest Green",
+      "Coffee Brown",
+      "Maroon"
+    ],
+    "finish": "Glossy",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/versa-tile-grey.jpg",
+    "gallery": [
+      "assets/images/products/versa-tile-grey.jpg"
+    ],
+    "features": [
+      "Thicker 28G steel",
+      "Elegant stepped profile",
+      "Custom lengths",
+      "Long-term roofing"
+    ],
+    "applications": [
+      "Homes",
+      "Hotels",
+      "Schools",
+      "Commercial projects"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 49,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "roman-tile-30g-glossy",
+    "slug": "roman-tile-30g-glossy",
+    "name": "Roman Tiles Iron Sheet 30G",
+    "category": "roman-tile",
+    "categoryName": "Roman Tile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Decorative Roman tile profile with an attractive glossy finish.",
+    "description": "Roman Tile 30G gives homes and commercial projects a classic tiled appearance at an affordable price.",
+    "price": 500,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Glossy finish. Confirm step length and roof measurements before ordering.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Forest Green",
+      "Coffee Brown",
+      "Maroon"
+    ],
+    "finish": "Glossy",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/royal-eurotile.jpg",
+    "gallery": [
+      "assets/images/products/royal-eurotile.jpg"
+    ],
+    "features": [
+      "Roman tile appearance",
+      "Glossy finish",
+      "Custom lengths",
+      "Affordable elegance"
+    ],
+    "applications": [
+      "Homes",
+      "Villas",
+      "Hotels",
+      "Churches"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 102,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "roman-tile-28g-glossy",
+    "slug": "roman-tile-28g-glossy",
+    "name": "Roman Tiles Iron Sheet 28G",
+    "category": "roman-tile",
+    "categoryName": "Roman Tile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Stronger 28G Roman tile sheet for premium and durable roofing.",
+    "description": "Roman Tile 28G combines a tiled look with greater thickness and improved long-term performance.",
+    "price": 550,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Glossy finish. Gauge 28 is the stronger option.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Forest Green",
+      "Coffee Brown",
+      "Maroon"
+    ],
+    "finish": "Glossy",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/eurotile-grey.jpg",
+    "gallery": [
+      "assets/images/products/eurotile-grey.jpg"
+    ],
+    "features": [
+      "Thicker 28G steel",
+      "Roman tile appearance",
+      "Custom lengths",
+      "Premium durability"
+    ],
+    "applications": [
+      "Homes",
+      "Villas",
+      "Hotels",
+      "Commercial buildings"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 61,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "box-profile-30g-matte",
+    "slug": "box-profile-30g-matte",
+    "name": "Matte Box Profile Iron Sheet 30G",
+    "category": "box-profile",
+    "categoryName": "Box Profile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Modern non-shiny box profile roofing with improved scratch resistance and long-lasting colour.",
+    "description": "Matte Box Profile 30G has a premium dull finish that reduces glare and gives modern buildings an elegant appearance.",
+    "price": 450,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Matte finish. Ideal for customers prioritising elegance and long-term colour.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
       "Matte Charcoal",
       "Matte Black",
       "Matte Brown",
       "Matte Green",
       "Matte Red"
     ],
-
-    finish: "Matte",
-    coating: "Premium matte-coated galvanized steel",
-
-    image: "assets/images/products/matte-box-profile.jpg",
-
-    gallery: [
-      "assets/images/products/matte-box-profile.jpg",
-      "assets/images/products/matte-box-grey.jpg",
-      "assets/images/products/matte-box-black.jpg"
+    "finish": "Matte",
+    "coating": "Premium matte-coated galvanized steel",
+    "image": "assets/images/products/matte-box-profile.jpg",
+    "gallery": [
+      "assets/images/products/matte-box-profile.jpg"
     ],
-
-    features: [
-      "Premium matte appearance",
-      "Reduced surface reflection",
-      "Weather resistant",
-      "Available in custom lengths",
-      "Suitable for modern architecture"
+    "features": [
+      "Non-shiny premium finish",
+      "Reduced glare",
+      "Scratch resistant",
+      "Long-lasting colour"
     ],
-
-    applications: [
-      "Modern residential homes",
+    "applications": [
+      "Modern homes",
       "Apartments",
       "Hotels",
-      "Office buildings",
-      "Commercial developments"
+      "Offices"
     ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: true,
-    bestseller: true,
-    onSale: true,
-    rating: 4.9,
-    reviewCount: 73,
-
-    seoTitle:
-      "Royal Matte Box Profile Mabati Kenya",
-    seoDescription:
-      "Shop premium Royal Matte Box Profile mabati from ROYAL MABATI FACTORY LTD."
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 73,
+    "warranty": "Confirm product-specific warranty terms before purchase."
   },
-
   {
-    id: "royal-eurotile",
-    slug: "royal-eurotile",
-    name: "Royal Eurotile",
-    category: "tile-profile",
-    categoryName: "Tile Profile Mabati",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Elegant tile-profile roofing sheet designed for stylish residential and commercial roofing.",
-
-    description:
-      "Royal Eurotile provides the visual appearance of traditional tiles while offering the strength, convenience and affordability of steel roofing sheets.",
-
-    price: 780,
-    oldPrice: 850,
-    priceUnit: "per metre",
-    priceNote:
-      "Contact our sales team for current colour and gauge availability.",
-
-    gauge: ["30", "28"],
-    defaultGauge: "30",
-
-    availableLengths: [
-      1.5,
-      2,
-      2.5,
-      3,
-      3.5,
-      4,
-      4.5,
-      5,
-      5.5,
-      6,
-      6.5,
-      7,
-      7.5,
-      8
+    "id": "box-profile-28g-matte",
+    "slug": "box-profile-28g-matte",
+    "name": "Matte Box Profile Iron Sheet 28G",
+    "category": "box-profile",
+    "categoryName": "Box Profile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Premium thick matte box profile sheet for elegant and durable long-term roofing.",
+    "description": "Matte Box Profile 28G combines the stronger gauge with a premium non-reflective, scratch-resistant finish.",
+    "price": 530,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Premium matte finish and stronger Gauge 28 steel.",
+    "gauge": [
+      "28"
     ],
-
-    effectiveWidth: 1,
-    totalWidth: 1.05,
-
-    colours: [
-      "Brick Red",
-      "Charcoal Grey",
-      "Chocolate Brown",
-      "Forest Green",
-      "Maroon"
-    ],
-
-    finish: "Glossy tile finish",
-    coating: "Pre-painted galvanized steel",
-
-    image: "assets/images/products/royal-eurotile.jpg",
-
-    gallery: [
-      "assets/images/products/royal-eurotile.jpg",
-      "assets/images/products/eurotile-red.jpg",
-      "assets/images/products/eurotile-grey.jpg"
-    ],
-
-    features: [
-      "Elegant tile appearance",
-      "Lightweight construction",
-      "Easy installation",
-      "Custom-cut lengths",
-      "Weather resistant finish"
-    ],
-
-    applications: [
-      "Residential homes",
-      "Villas",
-      "Apartments",
-      "Hotels",
-      "Office buildings"
-    ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: true,
-    bestseller: true,
-    onSale: true,
-    rating: 4.9,
-    reviewCount: 102,
-
-    seoTitle:
-      "Royal Eurotile Mabati Price in Kenya",
-    seoDescription:
-      "Buy Royal Eurotile roofing sheets from ROYAL MABATI FACTORY LTD with free delivery countrywide."
-  },
-
-  {
-    id: "royal-versa-tile",
-    slug: "royal-versa-tile",
-    name: "Royal Versa Tile",
-    category: "tile-profile",
-    categoryName: "Tile Profile Mabati",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "A stylish tile-profile roofing sheet suitable for beautiful and durable roofing projects.",
-
-    description:
-      "Royal Versa Tile offers a premium tiled appearance with the durability and low maintenance requirements of modern steel roofing.",
-
-    price: 800,
-    oldPrice: 870,
-    priceUnit: "per metre",
-    priceNote:
-      "Price varies according to gauge, colour and selected length.",
-
-    gauge: ["30", "28"],
-    defaultGauge: "30",
-
-    availableLengths: [
-      1.5,
-      2,
-      2.5,
-      3,
-      3.5,
-      4,
-      4.5,
-      5,
-      5.5,
-      6,
-      6.5,
-      7,
-      7.5,
-      8
-    ],
-
-    effectiveWidth: 1,
-    totalWidth: 1.05,
-
-    colours: [
-      "Brick Red",
-      "Charcoal Grey",
-      "Chocolate Brown",
-      "Forest Green",
-      "Maroon"
-    ],
-
-    finish: "Glossy tile finish",
-    coating: "Pre-painted galvanized steel",
-
-    image: "assets/images/products/royal-versa-tile.jpg",
-
-    gallery: [
-      "assets/images/products/royal-versa-tile.jpg",
-      "assets/images/products/versa-tile-red.jpg",
-      "assets/images/products/versa-tile-grey.jpg"
-    ],
-
-    features: [
-      "Stylish tile profile",
-      "Durable galvanized steel",
-      "Weather resistant",
-      "Low maintenance",
-      "Custom lengths available"
-    ],
-
-    applications: [
-      "Residential houses",
-      "Luxury homes",
-      "Guest houses",
-      "Hotels",
-      "Commercial properties"
-    ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: true,
-    bestseller: false,
-    onSale: false,
-    rating: 4.8,
-    reviewCount: 64,
-
-    seoTitle:
-      "Royal Versa Tile Roofing Sheets Kenya",
-    seoDescription:
-      "Purchase Royal Versa Tile roofing sheets from ROYAL MABATI FACTORY LTD."
-  },
-
-  {
-    id: "royal-corrugated-30g",
-    slug: "royal-corrugated-30g",
-    name: "Royal Corrugated 30G",
-    category: "corrugated",
-    categoryName: "Corrugated Mabati",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Affordable and durable corrugated roofing sheet for homes, farms and commercial structures.",
-
-    description:
-      "Royal Corrugated 30G is a versatile roofing sheet suitable for residential, agricultural and commercial use. It offers reliable water drainage and easy installation.",
-
-    price: 580,
-    oldPrice: 640,
-    priceUnit: "per metre",
-    priceNote:
-      "Contact us to confirm available colours and lengths.",
-
-    gauge: ["30", "28"],
-    defaultGauge: "30",
-
-    availableLengths: [
+    "defaultGauge": "28",
+    "availableLengths": [
       1.5,
       2,
       2.5,
@@ -587,84 +898,135 @@ const PRODUCTS = [
       11,
       12
     ],
-
-    effectiveWidth: 0.85,
-    totalWidth: 0.9,
-
-    colours: [
-      "Brick Red",
-      "Charcoal Grey",
-      "Chocolate Brown",
-      "Forest Green",
-      "Sky Blue",
-      "Maroon"
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Matte Charcoal",
+      "Matte Black",
+      "Matte Brown",
+      "Matte Green",
+      "Matte Red"
     ],
-
-    finish: "Glossy",
-    coating: "Pre-painted galvanized steel",
-
-    image: "assets/images/products/corrugated-30g.jpg",
-
-    gallery: [
-      "assets/images/products/corrugated-30g.jpg",
-      "assets/images/products/corrugated-red.jpg",
+    "finish": "Matte",
+    "coating": "Premium matte-coated galvanized steel",
+    "image": "assets/images/products/matte-box-grey.jpg",
+    "gallery": [
+      "assets/images/products/matte-box-grey.jpg"
+    ],
+    "features": [
+      "Thicker 28G steel",
+      "Premium matte finish",
+      "Scratch resistant",
+      "Reduced glare"
+    ],
+    "applications": [
+      "Luxury homes",
+      "Hotels",
+      "Apartments",
+      "Commercial buildings"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 5.0,
+    "reviewCount": 58,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "corrugated-30g-matte",
+    "slug": "corrugated-30g-matte",
+    "name": "Matte Corrugated Iron Sheet 30G",
+    "category": "corrugated",
+    "categoryName": "Corrugated Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Traditional corrugated profile with a modern, non-shiny matte finish.",
+    "description": "Matte Corrugated 30G offers a classic profile with reduced glare and improved scratch resistance.",
+    "price": 400,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Matte finish. Custom lengths available.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "effectiveWidth": 0.85,
+    "totalWidth": 0.9,
+    "colours": [
+      "Matte Charcoal",
+      "Matte Black",
+      "Matte Brown",
+      "Matte Green",
+      "Matte Red"
+    ],
+    "finish": "Matte",
+    "coating": "Premium matte-coated galvanized steel",
+    "image": "assets/images/products/corrugated-grey.jpg",
+    "gallery": [
       "assets/images/products/corrugated-grey.jpg"
     ],
-
-    features: [
-      "Traditional corrugated design",
-      "Easy installation",
-      "Affordable roofing option",
-      "Custom lengths available",
-      "Suitable for multiple applications"
+    "features": [
+      "Matte colour finish",
+      "Traditional profile",
+      "Reduced glare",
+      "Custom lengths"
     ],
-
-    applications: [
-      "Residential houses",
+    "applications": [
+      "Homes",
+      "Schools",
       "Farm buildings",
-      "Shops",
-      "Sheds",
-      "Temporary structures"
+      "Commercial projects"
     ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: true,
-    bestseller: true,
-    onSale: true,
-    rating: 4.7,
-    reviewCount: 91,
-
-    seoTitle:
-      "Royal Corrugated Mabati 30G Price Kenya",
-    seoDescription:
-      "Order Royal Corrugated 30G roofing sheets from ROYAL MABATI FACTORY LTD."
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 43,
+    "warranty": "Confirm product-specific warranty terms before purchase."
   },
-
   {
-    id: "royal-corrugated-galvanized",
-    slug: "royal-corrugated-galvanized",
-    name: "Royal Galvanized Corrugated Sheet",
-    category: "corrugated",
-    categoryName: "Corrugated Mabati",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Unpainted galvanized corrugated roofing sheet for economical roofing and construction projects.",
-
-    description:
-      "Royal Galvanized Corrugated Sheet offers dependable protection and durability for customers seeking an economical unpainted roofing option.",
-
-    price: 520,
-    oldPrice: 570,
-    priceUnit: "per metre",
-    priceNote:
-      "The final price depends on the selected gauge and order quantity.",
-
-    gauge: ["32", "30", "28"],
-    defaultGauge: "30",
-
-    availableLengths: [
+    "id": "corrugated-28g-matte",
+    "slug": "corrugated-28g-matte",
+    "name": "Matte Corrugated Iron Sheet 28G",
+    "category": "corrugated",
+    "categoryName": "Corrugated Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Strong Gauge 28 corrugated roofing with a premium matte finish.",
+    "description": "Matte Corrugated 28G provides superior thickness, reduced glare and excellent durability.",
+    "price": 480,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Premium matte finish and stronger Gauge 28 steel.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [
       1.5,
       2,
       2.5,
@@ -684,615 +1046,1173 @@ const PRODUCTS = [
       11,
       12
     ],
-
-    effectiveWidth: 0.85,
-    totalWidth: 0.9,
-
-    colours: ["Natural Galvanized Silver"],
-
-    finish: "Galvanized",
-    coating: "Zinc-coated galvanized steel",
-
-    image:
-      "assets/images/products/galvanized-corrugated.jpg",
-
-    gallery: [
-      "assets/images/products/galvanized-corrugated.jpg",
-      "assets/images/products/galvanized-sheet-side.jpg"
+    "effectiveWidth": 0.85,
+    "totalWidth": 0.9,
+    "colours": [
+      "Matte Charcoal",
+      "Matte Black",
+      "Matte Brown",
+      "Matte Green",
+      "Matte Red"
     ],
-
-    features: [
-      "Economical roofing option",
-      "Galvanized corrosion protection",
-      "Easy to install",
-      "Available in several gauges",
-      "Custom-cut lengths"
+    "finish": "Matte",
+    "coating": "Premium matte-coated galvanized steel",
+    "image": "assets/images/products/corrugated-grey.jpg",
+    "gallery": [
+      "assets/images/products/corrugated-grey.jpg"
     ],
-
-    applications: [
-      "Farm structures",
-      "Workshops",
-      "Temporary buildings",
-      "Storage facilities",
-      "Budget residential projects"
+    "features": [
+      "Stronger 28G steel",
+      "Matte finish",
+      "Reduced glare",
+      "Scratch resistant"
     ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: false,
-    bestseller: false,
-    onSale: true,
-    rating: 4.6,
-    reviewCount: 43,
-
-    seoTitle:
-      "Galvanized Corrugated Mabati Kenya",
-    seoDescription:
-      "Buy galvanized corrugated roofing sheets from ROYAL MABATI FACTORY LTD."
+    "applications": [
+      "Homes",
+      "Schools",
+      "Warehouses",
+      "Commercial projects"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 39,
+    "warranty": "Confirm product-specific warranty terms before purchase."
   },
-
   {
-    id: "royal-stone-coated-classic",
-    slug: "royal-stone-coated-classic",
-    name: "Royal Stone Coated Classic",
-    category: "stone-coated",
-    categoryName: "Stone Coated Roofing",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Premium stone-coated steel roofing tile offering strength, elegance and long-term protection.",
-
-    description:
-      "Royal Stone Coated Classic provides a premium tiled appearance with the strength of steel and a protective stone-coated surface.",
-
-    price: 950,
-    oldPrice: 1050,
-    priceUnit: "per piece",
-    priceNote:
-      "Accessories and installation materials are sold separately.",
-
-    gauge: ["26"],
-    defaultGauge: "26",
-
-    availableLengths: [],
-    effectiveWidth: 1.26,
-    totalWidth: 1.34,
-
-    colours: [
+    "id": "versatile-30g-matte",
+    "slug": "versatile-30g-matte",
+    "name": "Matte Versatile Iron Sheet 30G",
+    "category": "versatile",
+    "categoryName": "Versatile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Elegant versatile profile with a modern matte finish.",
+    "description": "Matte Versatile 30G combines a premium stepped profile with a non-reflective, scratch-resistant finish.",
+    "price": 750,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Premium matte finish. Confirm available colours.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Matte Charcoal",
+      "Matte Black",
+      "Matte Brown",
+      "Matte Green",
+      "Matte Red"
+    ],
+    "finish": "Matte",
+    "coating": "Premium matte-coated galvanized steel",
+    "image": "assets/images/products/versa-tile-grey.jpg",
+    "gallery": [
+      "assets/images/products/versa-tile-grey.jpg"
+    ],
+    "features": [
+      "Premium matte look",
+      "Elegant stepped profile",
+      "Reduced glare",
+      "Long-lasting colour"
+    ],
+    "applications": [
+      "Modern homes",
+      "Hotels",
+      "Churches",
+      "Offices"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 46,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "versatile-28g-matte",
+    "slug": "versatile-28g-matte",
+    "name": "Matte Versatile Iron Sheet 28G",
+    "category": "versatile",
+    "categoryName": "Versatile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Premium Gauge 28 versatile roofing with exceptional strength and a matte finish.",
+    "description": "Matte Versatile 28G is a premium choice combining thickness, elegant styling and reduced glare.",
+    "price": 850,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Premium matte finish with stronger Gauge 28 steel.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Matte Charcoal",
+      "Matte Black",
+      "Matte Brown",
+      "Matte Green",
+      "Matte Red"
+    ],
+    "finish": "Matte",
+    "coating": "Premium matte-coated galvanized steel",
+    "image": "assets/images/products/versa-tile-grey.jpg",
+    "gallery": [
+      "assets/images/products/versa-tile-grey.jpg"
+    ],
+    "features": [
+      "Strong Gauge 28",
+      "Premium matte look",
+      "Scratch resistant",
+      "Long-term colour"
+    ],
+    "applications": [
+      "Luxury homes",
+      "Hotels",
+      "Commercial projects",
+      "Institutions"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 5.0,
+    "reviewCount": 34,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "roman-tile-30g-matte",
+    "slug": "roman-tile-30g-matte",
+    "name": "Matte Roman Tiles Iron Sheet 30G",
+    "category": "roman-tile",
+    "categoryName": "Roman Tile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Classic Roman tile appearance with a premium non-shiny finish.",
+    "description": "Matte Roman Tile 30G offers elegant roofing with reduced glare and improved colour retention.",
+    "price": 600,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Matte finish. Confirm roof step and sheet length requirements.",
+    "gauge": [
+      "30"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Matte Charcoal",
+      "Matte Black",
+      "Matte Brown",
+      "Matte Green",
+      "Matte Red"
+    ],
+    "finish": "Matte",
+    "coating": "Premium matte-coated galvanized steel",
+    "image": "assets/images/products/eurotile-grey.jpg",
+    "gallery": [
+      "assets/images/products/eurotile-grey.jpg"
+    ],
+    "features": [
+      "Roman tile profile",
+      "Premium matte finish",
+      "Reduced glare",
+      "Long-lasting colour"
+    ],
+    "applications": [
+      "Homes",
+      "Villas",
+      "Hotels",
+      "Churches"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 53,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "roman-tile-28g-matte",
+    "slug": "roman-tile-28g-matte",
+    "name": "Matte Roman Tiles Iron Sheet 28G",
+    "category": "roman-tile",
+    "categoryName": "Roman Tile Mabati",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Premium Roman tile roofing in stronger Gauge 28 with a matte finish.",
+    "description": "Matte Roman Tile 28G combines premium styling, better thickness and long-lasting colour.",
+    "price": 700,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "Premium matte finish and stronger Gauge 28 steel.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8
+    ],
+    "effectiveWidth": 1,
+    "totalWidth": 1.05,
+    "colours": [
+      "Matte Charcoal",
+      "Matte Black",
+      "Matte Brown",
+      "Matte Green",
+      "Matte Red"
+    ],
+    "finish": "Matte",
+    "coating": "Premium matte-coated galvanized steel",
+    "image": "assets/images/products/eurotile-grey.jpg",
+    "gallery": [
+      "assets/images/products/eurotile-grey.jpg"
+    ],
+    "features": [
+      "Strong Gauge 28",
+      "Roman tile profile",
+      "Premium matte finish",
+      "Scratch resistant"
+    ],
+    "applications": [
+      "Luxury homes",
+      "Hotels",
+      "Commercial buildings",
+      "Institutions"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 5.0,
+    "reviewCount": 31,
+    "warranty": "Confirm product-specific warranty terms before purchase."
+  },
+  {
+    "id": "stone-coated-tiles",
+    "slug": "stone-coated-tiles",
+    "name": "Stone Coated Roofing Tiles",
+    "category": "stone-coated",
+    "categoryName": "Stone Coated Roofing",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Premium stone-coated steel roofing tiles with a textured finish.",
+    "description": "Stone-coated tiles provide a premium appearance, weather resistance and reduced rain noise.",
+    "price": 550,
+    "oldPrice": null,
+    "priceUnit": "per piece",
+    "priceNote": "Accessories and installation materials are priced separately.",
+    "gauge": [
+      "28"
+    ],
+    "defaultGauge": "28",
+    "availableLengths": [],
+    "effectiveWidth": 1.26,
+    "totalWidth": 1.34,
+    "colours": [
       "Charcoal",
       "Coffee Brown",
       "Brick Red",
       "Forest Green",
       "Mixed Brown"
     ],
-
-    finish: "Stone coated",
-    coating: "Natural stone granules over coated steel",
-
-    image:
-      "assets/images/products/stone-coated-classic.jpg",
-
-    gallery: [
-      "assets/images/products/stone-coated-classic.jpg",
-      "assets/images/products/stone-coated-red.jpg",
-      "assets/images/products/stone-coated-charcoal.jpg"
+    "finish": "Stone coated",
+    "coating": "Stone granules over coated steel",
+    "image": "assets/images/products/stone-coated-classic.jpg",
+    "gallery": [
+      "assets/images/products/stone-coated-classic.jpg"
     ],
-
-    features: [
-      "Premium stone-coated finish",
-      "Excellent weather resistance",
+    "features": [
+      "Premium textured finish",
+      "Weather resistant",
       "Reduced rain noise",
-      "Elegant appearance",
-      "Long service life"
+      "Elegant appearance"
     ],
-
-    applications: [
+    "applications": [
       "Luxury homes",
       "Hotels",
       "Villas",
-      "Apartments",
-      "Institutional buildings"
+      "Apartments"
     ],
-
-    stockStatus: "Made to Order",
-    availability: true,
-    featured: true,
-    bestseller: false,
-    onSale: true,
-    rating: 4.9,
-    reviewCount: 38,
-
-    seoTitle:
-      "Royal Stone Coated Roofing Tiles Kenya",
-    seoDescription:
-      "Order Royal Stone Coated Classic roofing tiles from ROYAL MABATI FACTORY LTD."
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.9,
+    "reviewCount": 38,
+    "warranty": "Confirm manufacturer warranty and installation conditions."
   },
-
   {
-    id: "transparent-roofing-sheet",
-    slug: "transparent-roofing-sheet",
-    name: "Transparent Roofing Sheet",
-    category: "transparent-sheets",
-    categoryName: "Transparent Roofing Sheets",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Light-transmitting roofing sheet suitable for warehouses, patios and covered walkways.",
-
-    description:
-      "Transparent Roofing Sheets allow natural daylight into a building and can be combined with compatible roofing profiles.",
-
-    price: 900,
-    oldPrice: 980,
-    priceUnit: "per metre",
-    priceNote:
-      "Confirm profile compatibility before placing your order.",
-
-    gauge: ["N/A"],
-    defaultGauge: "N/A",
-
-    availableLengths: [
+    "id": "ridge-cap",
+    "slug": "ridge-cap",
+    "name": "Roof Ridge Cap",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Colour-matched ridge cap for sealing the top of a pitched roof.",
+    "description": "Ridge caps provide a neat, weather-resistant finish at the roof ridge.",
+    "price": 200,
+    "oldPrice": null,
+    "priceUnit": "per piece",
+    "priceNote": "Confirm standard length, colour and custom size.",
+    "gauge": [
+      "30",
+      "28"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
       2,
       2.5,
+      3
+    ],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Coffee Brown",
+      "Forest Green",
+      "Maroon"
+    ],
+    "finish": "Glossy or matte",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/ridge-cap.jpg",
+    "gallery": [
+      "assets/images/products/ridge-cap.jpg"
+    ],
+    "features": [
+      "Roof ridge protection",
+      "Colour matching",
+      "Custom sizes"
+    ],
+    "applications": [
+      "Pitched roofs"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 61,
+    "warranty": "Workmanship and coating terms depend on the selected material."
+  },
+  {
+    "id": "roof-valley",
+    "slug": "roof-valley",
+    "name": "Roof Valley",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Valley flashing for directing rainwater at internal roof intersections.",
+    "description": "Roof valleys help prevent water penetration where two roof slopes meet.",
+    "price": 200,
+    "oldPrice": null,
+    "priceUnit": "per piece",
+    "priceNote": "Confirm length, gauge, colour and custom dimensions.",
+    "gauge": [
+      "30",
+      "28"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      2,
+      2.5,
+      3
+    ],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Coffee Brown",
+      "Forest Green",
+      "Maroon"
+    ],
+    "finish": "Glossy or matte",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/roof-valley.jpg",
+    "gallery": [
+      "assets/images/products/roof-valley.jpg"
+    ],
+    "features": [
+      "Improves drainage",
+      "Helps prevent leaks",
+      "Custom sizes"
+    ],
+    "applications": [
+      "Complex roof designs"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 36,
+    "warranty": "Workmanship and coating terms depend on the selected material."
+  },
+  {
+    "id": "rainwater-gutter-metre",
+    "slug": "rainwater-gutter-metre",
+    "name": "Rainwater Gutter",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Durable gutter for collecting roof water and protecting walls and foundations.",
+    "description": "Rainwater gutters direct water safely to downpipes and harvesting systems.",
+    "price": 650,
+    "oldPrice": null,
+    "priceUnit": "per metre",
+    "priceNote": "A 10-metre gutter run is available at KSh 3,500. Confirm profile and colour.",
+    "gauge": [
+      "30",
+      "28"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      1,
+      2,
       3,
-      3.5,
-      4,
-      4.5,
       5,
-      5.5,
-      6
+      10
     ],
-
-    effectiveWidth: 0.85,
-    totalWidth: 0.9,
-
-    colours: [
-      "Clear",
-      "Translucent White"
-    ],
-
-    finish: "Transparent",
-    coating: "UV-protected translucent material",
-
-    image:
-      "assets/images/products/transparent-roofing-sheet.jpg",
-
-    gallery: [
-      "assets/images/products/transparent-roofing-sheet.jpg",
-      "assets/images/products/transparent-installed.jpg"
-    ],
-
-    features: [
-      "Allows natural daylight",
-      "UV-protected material",
-      "Lightweight",
-      "Easy to install",
-      "Compatible with selected roofing profiles"
-    ],
-
-    applications: [
-      "Warehouses",
-      "Patios",
-      "Walkways",
-      "Factories",
-      "Greenhouses"
-    ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: false,
-    bestseller: false,
-    onSale: false,
-    rating: 4.6,
-    reviewCount: 27,
-
-    seoTitle:
-      "Transparent Roofing Sheets Kenya",
-    seoDescription:
-      "Buy transparent roofing sheets from ROYAL MABATI FACTORY LTD."
-  },
-
-  {
-    id: "roof-ridge-cap",
-    slug: "roof-ridge-cap",
-    name: "Roof Ridge Cap",
-    category: "roofing-accessories",
-    categoryName: "Roofing Accessories",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Protective ridge cap used to cover and seal the highest point of a pitched roof.",
-
-    description:
-      "Roof Ridge Caps provide a neat, waterproof finish along the roof ridge and are available in colours matching selected mabati profiles.",
-
-    price: 650,
-    oldPrice: 700,
-    priceUnit: "per piece",
-    priceNote:
-      "Standard and customized ridge sizes are available.",
-
-    gauge: ["30", "28"],
-    defaultGauge: "30",
-
-    availableLengths: [2, 2.5, 3],
-
-    effectiveWidth: null,
-    totalWidth: null,
-
-    colours: [
-      "Brick Red",
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
       "Charcoal Grey",
-      "Chocolate Brown",
-      "Forest Green",
-      "Maroon"
-    ],
-
-    finish: "Colour coated",
-    coating: "Pre-painted galvanized steel",
-
-    image: "assets/images/products/ridge-cap.jpg",
-
-    gallery: [
-      "assets/images/products/ridge-cap.jpg",
-      "assets/images/products/ridge-cap-installed.jpg"
-    ],
-
-    features: [
-      "Provides roof ridge protection",
-      "Colour matching available",
-      "Weather resistant",
-      "Custom sizes available",
-      "Neat roof finish"
-    ],
-
-    applications: [
-      "Pitched roofs",
-      "Residential buildings",
-      "Warehouses",
-      "Commercial buildings"
-    ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: false,
-    bestseller: true,
-    onSale: true,
-    rating: 4.8,
-    reviewCount: 61,
-
-    seoTitle:
-      "Roof Ridge Caps for Sale Kenya",
-    seoDescription:
-      "Order roof ridge caps from ROYAL MABATI FACTORY LTD."
-  },
-
-  {
-    id: "roof-valley",
-    slug: "roof-valley",
-    name: "Roof Valley",
-    category: "roofing-accessories",
-    categoryName: "Roofing Accessories",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Roof valley flashing designed to direct rainwater away from internal roof intersections.",
-
-    description:
-      "Roof Valley flashing helps prevent water penetration where two roof slopes meet and provides controlled drainage toward the gutter system.",
-
-    price: 700,
-    oldPrice: 750,
-    priceUnit: "per piece",
-    priceNote:
-      "Custom valley sizes are available on request.",
-
-    gauge: ["30", "28"],
-    defaultGauge: "30",
-
-    availableLengths: [2, 2.5, 3],
-
-    effectiveWidth: null,
-    totalWidth: null,
-
-    colours: [
-      "Brick Red",
-      "Charcoal Grey",
-      "Chocolate Brown",
-      "Forest Green",
-      "Maroon"
-    ],
-
-    finish: "Colour coated",
-    coating: "Pre-painted galvanized steel",
-
-    image: "assets/images/products/roof-valley.jpg",
-
-    gallery: [
-      "assets/images/products/roof-valley.jpg",
-      "assets/images/products/roof-valley-installed.jpg"
-    ],
-
-    features: [
-      "Improves roof drainage",
-      "Helps prevent water leakage",
-      "Weather resistant",
-      "Custom sizes available",
-      "Matches selected roof colours"
-    ],
-
-    applications: [
-      "Complex roof designs",
-      "Residential buildings",
-      "Commercial roofing",
-      "Institutional buildings"
-    ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: false,
-    bestseller: false,
-    onSale: false,
-    rating: 4.7,
-    reviewCount: 36,
-
-    seoTitle:
-      "Roof Valley Flashing Kenya",
-    seoDescription:
-      "Buy roof valley flashing from ROYAL MABATI FACTORY LTD."
-  },
-
-  {
-    id: "rainwater-gutter",
-    slug: "rainwater-gutter",
-    name: "Rainwater Gutter",
-    category: "roofing-accessories",
-    categoryName: "Roofing Accessories",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Durable rainwater gutter for collecting and directing roof water safely away from the building.",
-
-    description:
-      "Rainwater Gutters help protect foundations, walls and landscaping by controlling water flow from the roof.",
-
-    price: 850,
-    oldPrice: 920,
-    priceUnit: "per piece",
-    priceNote:
-      "Downpipes, brackets and connectors may be ordered separately.",
-
-    gauge: ["30", "28"],
-    defaultGauge: "30",
-
-    availableLengths: [2, 2.5, 3],
-
-    effectiveWidth: null,
-    totalWidth: null,
-
-    colours: [
-      "Charcoal Grey",
-      "Chocolate Brown",
+      "Coffee Brown",
       "Brick Red",
       "Forest Green",
       "Galvanized Silver"
     ],
-
-    finish: "Colour coated",
-    coating: "Pre-painted galvanized steel",
-
-    image: "assets/images/products/rainwater-gutter.jpg",
-
-    gallery: [
-      "assets/images/products/rainwater-gutter.jpg",
-      "assets/images/products/gutter-installed.jpg"
+    "finish": "Glossy or matte",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/rainwater-gutter.jpg",
+    "gallery": [
+      "assets/images/products/rainwater-gutter.jpg"
     ],
-
-    features: [
-      "Controls rainwater flow",
-      "Protects walls and foundations",
-      "Colour options available",
-      "Custom sizes available",
-      "Strong weather-resistant material"
+    "features": [
+      "Controls rainwater",
+      "Protects foundations",
+      "Custom runs"
     ],
-
-    applications: [
-      "Residential homes",
-      "Commercial buildings",
+    "applications": [
+      "Homes",
       "Schools",
       "Warehouses",
-      "Rainwater harvesting systems"
+      "Rainwater harvesting"
     ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: false,
-    bestseller: true,
-    onSale: true,
-    rating: 4.8,
-    reviewCount: 48,
-
-    seoTitle:
-      "Rainwater Gutters for Sale Kenya",
-    seoDescription:
-      "Order roofing gutters and accessories from ROYAL MABATI FACTORY LTD."
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 48,
+    "warranty": "Confirm coating and installation terms."
   },
-
   {
-    id: "roofing-nails",
-    slug: "roofing-nails",
-    name: "Roofing Nails with Washers",
-    category: "roofing-accessories",
-    categoryName: "Roofing Accessories",
-    brand: "ROYAL MABATI FACTORY LTD",
-
-    shortDescription:
-      "Strong roofing nails fitted with washers for secure and water-resistant mabati installation.",
-
-    description:
-      "Roofing Nails with Washers are designed to hold roofing sheets firmly while helping to reduce water entry around fixing points.",
-
-    price: 350,
-    oldPrice: 400,
-    priceUnit: "per kilogram",
-    priceNote:
-      "Available in different lengths depending on roofing requirements.",
-
-    gauge: ["N/A"],
-    defaultGauge: "N/A",
-
-    availableLengths: [],
-
-    effectiveWidth: null,
-    totalWidth: null,
-
-    colours: ["Galvanized Silver"],
-
-    finish: "Galvanized",
-    coating: "Zinc-coated steel",
-
-    image: "assets/images/products/roofing-nails.jpg",
-
-    gallery: [
-      "assets/images/products/roofing-nails.jpg",
-      "assets/images/products/roofing-nails-closeup.jpg"
+    "id": "gutter-10m-run",
+    "slug": "gutter-10m-run",
+    "name": "Rainwater Gutter 10-Metre Run",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Wholesale-value 10-metre gutter run for complete rainwater systems.",
+    "description": "A 10-metre gutter run supplied for longer roof edges and commercial installations.",
+    "price": 3500,
+    "oldPrice": null,
+    "priceUnit": "per 10-metre run",
+    "priceNote": "Support brackets, outlets, bends and downpipes are sold separately.",
+    "gauge": [
+      "30",
+      "28"
     ],
-
-    features: [
-      "Includes roofing washers",
-      "Strong holding performance",
+    "defaultGauge": "30",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Charcoal Grey",
+      "Coffee Brown",
+      "Brick Red",
+      "Forest Green",
+      "Galvanized Silver"
+    ],
+    "finish": "Glossy or matte",
+    "coating": "Pre-painted galvanized steel",
+    "image": "assets/images/products/rainwater-gutter.jpg",
+    "gallery": [
+      "assets/images/products/rainwater-gutter.jpg"
+    ],
+    "features": [
+      "10-metre value run",
+      "Rainwater control",
+      "Colour options"
+    ],
+    "applications": [
+      "Homes",
+      "Warehouses",
+      "Schools"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 22,
+    "warranty": "Confirm coating and installation terms."
+  },
+  {
+    "id": "gutter-support-bracket",
+    "slug": "gutter-support-bracket",
+    "name": "Gutter Support Bracket / Clip",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Support bracket or clip for securely mounting rainwater gutters.",
+    "description": "Gutter brackets support and align gutters along the fascia or roof edge.",
+    "price": 60,
+    "oldPrice": null,
+    "priceUnit": "per piece",
+    "priceNote": "Confirm size and gutter compatibility.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Black",
+      "Galvanized Silver",
+      "Colour matched"
+    ],
+    "finish": "Standard",
+    "coating": "Protected metal",
+    "image": "assets/images/products/gutter-bracket.jpg",
+    "gallery": [
+      "assets/images/products/gutter-bracket.jpg"
+    ],
+    "features": [
+      "Secure gutter support",
+      "Easy installation"
+    ],
+    "applications": [
+      "Gutter systems"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 17,
+    "warranty": "Confirm compatibility before installation."
+  },
+  {
+    "id": "downpipe",
+    "slug": "downpipe",
+    "name": "Rainwater Downpipe",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Downpipe for directing gutter water safely to drains or storage tanks.",
+    "description": "Rainwater downpipes carry water from roof gutters to drainage or harvesting systems.",
+    "price": 500,
+    "oldPrice": null,
+    "priceUnit": "per piece",
+    "priceNote": "Confirm length, diameter, colour and fittings.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Charcoal Grey",
+      "Coffee Brown",
+      "Brick Red",
+      "Forest Green",
+      "Galvanized Silver"
+    ],
+    "finish": "Standard",
+    "coating": "Colour-coated or galvanized",
+    "image": "assets/images/products/downpipe.jpg",
+    "gallery": [
+      "assets/images/products/downpipe.jpg"
+    ],
+    "features": [
+      "Directs rainwater",
+      "Compatible fittings available"
+    ],
+    "applications": [
+      "Gutter systems",
+      "Rainwater harvesting"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 19,
+    "warranty": "Confirm compatibility before installation."
+  },
+  {
+    "id": "gutter-bend-elbow-end-cap",
+    "slug": "gutter-bend-elbow-end-cap",
+    "name": "Gutter Bend, Elbow or End Cap",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Essential gutter and downpipe fittings for corners, direction changes and closures.",
+    "description": "Choose bends, elbows or end caps to complete a rainwater drainage system.",
+    "price": 200,
+    "oldPrice": null,
+    "priceUnit": "per piece",
+    "priceNote": "State the exact fitting required when ordering.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Charcoal Grey",
+      "Coffee Brown",
+      "Brick Red",
+      "Forest Green",
+      "Galvanized Silver"
+    ],
+    "finish": "Standard",
+    "coating": "Colour-coated or galvanized",
+    "image": "assets/images/products/gutter-fittings.jpg",
+    "gallery": [
+      "assets/images/products/gutter-fittings.jpg"
+    ],
+    "features": [
+      "Multiple fitting types",
+      "Completes gutter systems"
+    ],
+    "applications": [
+      "Gutters",
+      "Downpipes"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 14,
+    "warranty": "Confirm compatibility before installation."
+  },
+  {
+    "id": "gutter-outlet-dropper",
+    "slug": "gutter-outlet-dropper",
+    "name": "Gutter Outlet / Dropper",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Outlet or dropper connecting a gutter to a downpipe.",
+    "description": "Gutter outlets and droppers provide a controlled connection between the gutter and downpipe.",
+    "price": 300,
+    "oldPrice": null,
+    "priceUnit": "per piece",
+    "priceNote": "Confirm gutter profile and downpipe size.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Charcoal Grey",
+      "Coffee Brown",
+      "Brick Red",
+      "Forest Green",
+      "Galvanized Silver"
+    ],
+    "finish": "Standard",
+    "coating": "Colour-coated or galvanized",
+    "image": "assets/images/products/gutter-outlet.jpg",
+    "gallery": [
+      "assets/images/products/gutter-outlet.jpg"
+    ],
+    "features": [
+      "Connects gutter to downpipe",
+      "Supports rainwater drainage"
+    ],
+    "applications": [
+      "Gutter systems"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 12,
+    "warranty": "Confirm compatibility before installation."
+  },
+  {
+    "id": "roofing-nails-kg",
+    "slug": "roofing-nails-kg",
+    "name": "Roofing Nails with Washers",
+    "category": "nails-fasteners",
+    "categoryName": "Nails and Fasteners",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Roofing nails with washers for secure, water-resistant mabati installation.",
+    "description": "Galvanized roofing nails supplied per kilogram for timber roof structures.",
+    "price": 170,
+    "oldPrice": null,
+    "priceUnit": "per kilogram",
+    "priceNote": "Wholesale 50kg bag: KSh 8,000.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Galvanized Silver"
+    ],
+    "finish": "Galvanized",
+    "coating": "Zinc-coated steel",
+    "image": "assets/images/products/roofing-nails.jpg",
+    "gallery": [
+      "assets/images/products/roofing-nails.jpg"
+    ],
+    "features": [
+      "Washer included",
       "Corrosion resistant",
-      "Suitable for timber roofing structures",
-      "Available in several lengths"
+      "Strong fixing"
     ],
-
-    applications: [
+    "applications": [
       "Mabati installation",
-      "Timber roof structures",
-      "Residential roofing",
-      "Commercial roofing"
+      "Timber roofs"
     ],
-
-    stockStatus: "In Stock",
-    availability: true,
-    featured: false,
-    bestseller: true,
-    onSale: true,
-    rating: 4.7,
-    reviewCount: 69,
-
-    seoTitle:
-      "Roofing Nails with Washers Kenya",
-    seoDescription:
-      "Buy roofing nails and washers from ROYAL MABATI FACTORY LTD."
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": true,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 69,
+    "warranty": "Use the correct nail length and installation method."
+  },
+  {
+    "id": "roofing-nails-50kg",
+    "slug": "roofing-nails-50kg",
+    "name": "Roofing Nails Wholesale 50kg Bag",
+    "category": "nails-fasteners",
+    "categoryName": "Nails and Fasteners",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Wholesale 50kg bag of roofing nails with washers.",
+    "description": "Bulk roofing nails for contractors, hardware stores and large roofing projects.",
+    "price": 8000,
+    "oldPrice": null,
+    "priceUnit": "per 50kg bag",
+    "priceNote": "Wholesale bag price.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Galvanized Silver"
+    ],
+    "finish": "Galvanized",
+    "coating": "Zinc-coated steel",
+    "image": "assets/images/products/roofing-nails.jpg",
+    "gallery": [
+      "assets/images/products/roofing-nails.jpg"
+    ],
+    "features": [
+      "Wholesale 50kg bag",
+      "Washer included",
+      "Contractor value"
+    ],
+    "applications": [
+      "Large projects",
+      "Hardware resale"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 26,
+    "warranty": "Use the correct nail length and installation method."
+  },
+  {
+    "id": "ordinary-nails-kg",
+    "slug": "ordinary-nails-kg",
+    "name": "Ordinary Nails 1–6 Inch",
+    "category": "nails-fasteners",
+    "categoryName": "Nails and Fasteners",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "General construction nails available from 1 inch to 6 inches.",
+    "description": "Ordinary nails for timber, formwork, carpentry and general construction.",
+    "price": 160,
+    "oldPrice": null,
+    "priceUnit": "per kilogram",
+    "priceNote": "Available in 1, 2, 3, 4, 5 and 6-inch sizes.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Steel"
+    ],
+    "finish": "Standard steel",
+    "coating": "Standard",
+    "image": "assets/images/products/ordinary-nails.jpg",
+    "gallery": [
+      "assets/images/products/ordinary-nails.jpg"
+    ],
+    "features": [
+      "1–6 inch sizes",
+      "General construction use",
+      "Sold per kg"
+    ],
+    "applications": [
+      "Carpentry",
+      "Formwork",
+      "Timber construction"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 44,
+    "warranty": "Select the correct nail size for the intended use."
+  },
+  {
+    "id": "ordinary-nails-1-2inch-50kg",
+    "slug": "ordinary-nails-1-2inch-50kg",
+    "name": "Ordinary Nails 1–2 Inch Wholesale Bag",
+    "category": "nails-fasteners",
+    "categoryName": "Nails and Fasteners",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Wholesale 50kg bag of 1-inch or 2-inch ordinary nails.",
+    "description": "Bulk ordinary nails for contractors, carpenters and hardware shops.",
+    "price": 2500,
+    "oldPrice": null,
+    "priceUnit": "per 50kg bag",
+    "priceNote": "Choose either 1-inch or 2-inch size.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Steel"
+    ],
+    "finish": "Standard steel",
+    "coating": "Standard",
+    "image": "assets/images/products/ordinary-nails.jpg",
+    "gallery": [
+      "assets/images/products/ordinary-nails.jpg"
+    ],
+    "features": [
+      "Wholesale 50kg bag",
+      "1 or 2-inch sizes"
+    ],
+    "applications": [
+      "Carpentry",
+      "Hardware resale"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 18,
+    "warranty": "Choose the required nail size when ordering."
+  },
+  {
+    "id": "ordinary-nails-3inch-50kg",
+    "slug": "ordinary-nails-3inch-50kg",
+    "name": "Ordinary Nails 3 Inch Wholesale Bag",
+    "category": "nails-fasteners",
+    "categoryName": "Nails and Fasteners",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Wholesale 50kg bag of 3-inch ordinary nails.",
+    "description": "Bulk 3-inch nails for general building and carpentry.",
+    "price": 3200,
+    "oldPrice": null,
+    "priceUnit": "per 50kg bag",
+    "priceNote": "Wholesale bag price.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Steel"
+    ],
+    "finish": "Standard steel",
+    "coating": "Standard",
+    "image": "assets/images/products/ordinary-nails.jpg",
+    "gallery": [
+      "assets/images/products/ordinary-nails.jpg"
+    ],
+    "features": [
+      "Wholesale 50kg bag",
+      "3-inch nails"
+    ],
+    "applications": [
+      "Construction",
+      "Carpentry"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 16,
+    "warranty": "Confirm size before ordering."
+  },
+  {
+    "id": "ordinary-nails-4inch-50kg",
+    "slug": "ordinary-nails-4inch-50kg",
+    "name": "Ordinary Nails 4 Inch Wholesale Bag",
+    "category": "nails-fasteners",
+    "categoryName": "Nails and Fasteners",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Wholesale 50kg bag of 4-inch ordinary nails.",
+    "description": "Bulk 4-inch nails for heavy carpentry and construction.",
+    "price": 4000,
+    "oldPrice": null,
+    "priceUnit": "per 50kg bag",
+    "priceNote": "Wholesale bag price.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Steel"
+    ],
+    "finish": "Standard steel",
+    "coating": "Standard",
+    "image": "assets/images/products/ordinary-nails.jpg",
+    "gallery": [
+      "assets/images/products/ordinary-nails.jpg"
+    ],
+    "features": [
+      "Wholesale 50kg bag",
+      "4-inch nails"
+    ],
+    "applications": [
+      "Construction",
+      "Heavy carpentry"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 15,
+    "warranty": "Confirm size before ordering."
+  },
+  {
+    "id": "ordinary-nails-5-6inch-50kg",
+    "slug": "ordinary-nails-5-6inch-50kg",
+    "name": "Ordinary Nails 5–6 Inch Wholesale Bag",
+    "category": "nails-fasteners",
+    "categoryName": "Nails and Fasteners",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Wholesale 50kg bag of 5-inch or 6-inch ordinary nails.",
+    "description": "Bulk long nails for heavy timber work and construction.",
+    "price": 5000,
+    "oldPrice": null,
+    "priceUnit": "per 50kg bag",
+    "priceNote": "Choose either 5-inch or 6-inch size.",
+    "gauge": [
+      "N/A"
+    ],
+    "defaultGauge": "N/A",
+    "availableLengths": [],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Steel"
+    ],
+    "finish": "Standard steel",
+    "coating": "Standard",
+    "image": "assets/images/products/ordinary-nails.jpg",
+    "gallery": [
+      "assets/images/products/ordinary-nails.jpg"
+    ],
+    "features": [
+      "Wholesale 50kg bag",
+      "5 or 6-inch sizes"
+    ],
+    "applications": [
+      "Heavy timber work",
+      "Construction"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": false,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.7,
+    "reviewCount": 13,
+    "warranty": "Choose the required nail size when ordering."
   }
 ];
 
-/* ==========================================================
-   PRODUCT COLLECTIONS
-   ========================================================== */
-
-const FEATURED_PRODUCTS = PRODUCTS.filter(
-  (product) => product.featured === true
-);
-
+const FEATURED_PRODUCTS = PRODUCTS.filter((product) => product.featured === true);
 const AVAILABLE_PRODUCTS = PRODUCTS.filter(
-  (product) =>
-    product.availability === true &&
-    product.stockStatus !== "Out of Stock"
+  (product) => product.availability === true && product.stockStatus !== "Out of Stock"
 );
-
 const SALE_PRODUCTS = PRODUCTS.filter(
-  (product) =>
-    product.onSale === true &&
-    Number(product.oldPrice) > Number(product.price)
+  (product) => product.onSale === true && Number(product.oldPrice) > Number(product.price)
 );
+const BESTSELLER_PRODUCTS = PRODUCTS.filter((product) => product.bestseller === true);
 
-const BESTSELLER_PRODUCTS = PRODUCTS.filter(
-  (product) => product.bestseller === true
-);
-
-/* ==========================================================
-   PRODUCT FUNCTIONS
-   ========================================================== */
-
-/**
- * Find a product by its ID.
- * @param {string} productId
- * @returns {object|null}
- */
 function getProductById(productId) {
-  return (
-    PRODUCTS.find(
-      (product) => product.id === productId
-    ) || null
-  );
+  return PRODUCTS.find((product) => product.id === productId) || null;
 }
 
-/**
- * Find a product using its URL slug.
- * @param {string} slug
- * @returns {object|null}
- */
 function getProductBySlug(slug) {
-  return (
-    PRODUCTS.find(
-      (product) => product.slug === slug
-    ) || null
-  );
+  return PRODUCTS.find((product) => product.slug === slug) || null;
 }
 
-/**
- * Return products from a selected category.
- * @param {string} categoryId
- * @returns {object[]}
- */
 function getProductsByCategory(categoryId) {
-  if (!categoryId || categoryId === "all") {
-    return [...PRODUCTS];
-  }
-
-  return PRODUCTS.filter(
-    (product) => product.category === categoryId
-  );
+  if (!categoryId || categoryId === "all") return [...PRODUCTS];
+  return PRODUCTS.filter((product) => product.category === categoryId);
 }
 
-/**
- * Return products related to the selected product.
- * @param {string} productId
- * @param {number} limit
- * @returns {object[]}
- */
 function getRelatedProducts(productId, limit = 4) {
   const selectedProduct = getProductById(productId);
-
-  if (!selectedProduct) {
-    return [];
-  }
-
+  if (!selectedProduct) return [];
   return PRODUCTS.filter(
-    (product) =>
-      product.id !== productId &&
-      product.category === selectedProduct.category
+    (product) => product.id !== productId && product.category === selectedProduct.category
   ).slice(0, limit);
 }
 
-/**
- * Search products by name, category, description,
- * gauge, colour or application.
- * @param {string} searchTerm
- * @returns {object[]}
- */
 function searchProducts(searchTerm) {
-  const normalizedSearch = String(
-    searchTerm || ""
-  )
-    .trim()
-    .toLowerCase();
-
-  if (!normalizedSearch) {
-    return [...PRODUCTS];
-  }
+  const normalizedSearch = String(searchTerm || "").trim().toLowerCase();
+  if (!normalizedSearch) return [...PRODUCTS];
 
   return PRODUCTS.filter((product) => {
     const searchableContent = [
@@ -1304,132 +2224,52 @@ function searchProducts(searchTerm) {
       product.description,
       product.finish,
       product.coating,
+      product.stockStatus,
+      product.priceUnit,
       ...(product.gauge || []),
       ...(product.colours || []),
       ...(product.features || []),
       ...(product.applications || [])
-    ]
-      .join(" ")
-      .toLowerCase();
+    ].join(" ").toLowerCase();
 
-    return searchableContent.includes(
-      normalizedSearch
-    );
+    return searchableContent.includes(normalizedSearch);
   });
 }
 
-/**
- * Calculate the discount percentage.
- * @param {object} product
- * @returns {number}
- */
 function getDiscountPercentage(product) {
   const currentPrice = Number(product?.price);
   const oldPrice = Number(product?.oldPrice);
-
-  if (
-    !Number.isFinite(currentPrice) ||
-    !Number.isFinite(oldPrice) ||
-    oldPrice <= currentPrice ||
-    oldPrice <= 0
-  ) {
-    return 0;
-  }
-
-  return Math.round(
-    ((oldPrice - currentPrice) / oldPrice) * 100
-  );
+  if (!Number.isFinite(currentPrice) || !Number.isFinite(oldPrice) || oldPrice <= currentPrice || oldPrice <= 0) return 0;
+  return Math.round(((oldPrice - currentPrice) / oldPrice) * 100);
 }
 
-/**
- * Format an amount as Kenyan Shillings.
- * @param {number} amount
- * @returns {string}
- */
 function formatKSh(amount) {
   const numericAmount = Number(amount);
-
-  if (!Number.isFinite(numericAmount)) {
-    return "KSh 0";
-  }
-
-  return `KSh ${numericAmount.toLocaleString(
-    "en-KE",
-    {
-      minimumFractionDigits: 0,
-      maximumFractionDigits: 2
-    }
-  )}`;
+  if (!Number.isFinite(numericAmount)) return "KSh 0";
+  return `KSh ${numericAmount.toLocaleString("en-KE", { maximumFractionDigits: 2 })}`;
 }
 
-/**
- * Check whether a product is a roofing sheet.
- * This excludes accessories.
- * @param {object} product
- * @returns {boolean}
- */
 function isRoofingSheet(product) {
-  return Boolean(
-    product &&
-    product.category !== "roofing-accessories"
-  );
+  return Boolean(product && !["roofing-accessories", "nails-fasteners"].includes(product.category));
 }
 
-/**
- * Check whether a product is an accessory.
- * @param {object} product
- * @returns {boolean}
- */
 function isRoofingAccessory(product) {
-  return Boolean(
-    product &&
-    product.category === "roofing-accessories"
-  );
+  return Boolean(product && ["roofing-accessories", "nails-fasteners"].includes(product.category));
 }
 
-/**
- * Return all available colours.
- * @returns {string[]}
- */
 function getAvailableColours() {
-  return [
-    ...new Set(
-      PRODUCTS.flatMap(
-        (product) => product.colours || []
-      )
-    )
-  ].sort();
+  return [...new Set(PRODUCTS.flatMap((product) => product.colours || []))].sort();
 }
 
-/**
- * Return all available gauges.
- * @returns {string[]}
- */
 function getAvailableGauges() {
-  return [
-    ...new Set(
-      PRODUCTS.flatMap(
-        (product) => product.gauge || []
-      )
-    )
-  ]
-    .filter((gauge) => gauge !== "N/A")
-    .sort((firstGauge, secondGauge) =>
-      Number(firstGauge) - Number(secondGauge)
-    );
+  return [...new Set(PRODUCTS.flatMap((product) => product.gauge || []))]
+    .filter((gauge) => ["28", "30"].includes(String(gauge)))
+    .sort((a, b) => Number(a) - Number(b));
 }
 
-/**
- * Create a WhatsApp enquiry link for a product.
- * @param {string} productId
- * @returns {string}
- */
 function createProductWhatsAppLink(productId) {
   const product = getProductById(productId);
-
-  if (!product) {
-    return `https://wa.me/${BUSINESS_DETAILS.whatsapp}`;
-  }
+  if (!product) return `https://wa.me/${BUSINESS_DETAILS.whatsapp}`;
 
   const message = [
     `Hello ${BUSINESS_DETAILS.name},`,
@@ -1437,47 +2277,28 @@ function createProductWhatsAppLink(productId) {
     `I am interested in ${product.name}.`,
     `Price shown: ${formatKSh(product.price)} ${product.priceUnit}.`,
     "",
-    "Please confirm:",
-    "- Current price",
-    "- Available gauges",
-    "- Available colours",
-    "- Available lengths",
-    "- Delivery details"
+    "Please confirm current stock, colour, size, delivery and payment details."
   ].join("\n");
 
-  return `https://wa.me/${
-    BUSINESS_DETAILS.whatsapp
-  }?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${BUSINESS_DETAILS.whatsapp}?text=${encodeURIComponent(message)}`;
 }
 
-/* ==========================================================
-   EXPOSE DATA AND FUNCTIONS GLOBALLY
-   ========================================================== */
-
 window.BUSINESS_DETAILS = BUSINESS_DETAILS;
-
 window.PRODUCTS = PRODUCTS;
 window.FEATURED_PRODUCTS = FEATURED_PRODUCTS;
 window.AVAILABLE_PRODUCTS = AVAILABLE_PRODUCTS;
 window.SALE_PRODUCTS = SALE_PRODUCTS;
 window.BESTSELLER_PRODUCTS = BESTSELLER_PRODUCTS;
 window.PRODUCT_CATEGORIES = PRODUCT_CATEGORIES;
-
 window.getProductById = getProductById;
 window.getProductBySlug = getProductBySlug;
-window.getProductsByCategory =
-  getProductsByCategory;
+window.getProductsByCategory = getProductsByCategory;
 window.getRelatedProducts = getRelatedProducts;
 window.searchProducts = searchProducts;
-window.getDiscountPercentage =
-  getDiscountPercentage;
+window.getDiscountPercentage = getDiscountPercentage;
 window.formatKSh = formatKSh;
 window.isRoofingSheet = isRoofingSheet;
-window.isRoofingAccessory =
-  isRoofingAccessory;
-window.getAvailableColours =
-  getAvailableColours;
-window.getAvailableGauges =
-  getAvailableGauges;
-window.createProductWhatsAppLink =
-  createProductWhatsAppLink;
+window.isRoofingAccessory = isRoofingAccessory;
+window.getAvailableColours = getAvailableColours;
+window.getAvailableGauges = getAvailableGauges;
+window.createProductWhatsAppLink = createProductWhatsAppLink;

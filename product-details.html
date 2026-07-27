@@ -2,6 +2,7 @@
 <html lang="en-KE">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#9b1c1c">
 
   <meta
     name="viewport"
@@ -34,7 +35,7 @@
 
   <link
     rel="canonical"
-    href="https://www.example.com/product-details.html"
+    href="https://victor-kibet-cybersecurity-guy.github.io/mabati-store/product-details.html"
   >
 
   <meta property="og:type" content="product">
@@ -51,12 +52,12 @@
 
   <meta
     property="og:image"
-    content="https://www.example.com/images/banners/hero-roofing.jpg"
+    content="https://victor-kibet-cybersecurity-guy.github.io/mabati-store/images/banners/hero-roofing.jpg"
   >
 
   <meta
     property="og:url"
-    content="https://www.example.com/product-details.html"
+    content="https://victor-kibet-cybersecurity-guy.github.io/mabati-store/product-details.html"
   >
 
   <meta
@@ -81,8 +82,11 @@
 
   <meta
     name="twitter:image"
-    content="https://www.example.com/images/banners/hero-roofing.jpg"
+    content="https://victor-kibet-cybersecurity-guy.github.io/mabati-store/images/banners/hero-roofing.jpg"
   >
+
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
   <link
     rel="preconnect"
@@ -133,7 +137,7 @@
       "@type": "Offer",
       "priceCurrency": "KES",
       "availability": "https://schema.org/InStock",
-      "url": "https://www.example.com/product-details.html"
+      "url": "https://victor-kibet-cybersecurity-guy.github.io/mabati-store/product-details.html"
     }
   }
   </script>
@@ -147,19 +151,19 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.example.com/index.html"
+        "item": "https://victor-kibet-cybersecurity-guy.github.io/mabati-store/index.html"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Mabati Products",
-        "item": "https://www.example.com/products.html"
+        "item": "https://victor-kibet-cybersecurity-guy.github.io/mabati-store/products.html"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Product Details",
-        "item": "https://www.example.com/product-details.html"
+        "item": "https://victor-kibet-cybersecurity-guy.github.io/mabati-store/product-details.html"
       }
     ]
   }
@@ -465,6 +469,12 @@
           <div class="product-gallery">
 
             <div class="product-gallery-main">
+              <button type="button" class="gallery-arrow gallery-arrow-prev" id="product-gallery-prev" aria-label="Previous product image">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button type="button" class="gallery-arrow gallery-arrow-next" id="product-gallery-next" aria-label="Next product image">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
 
               <img
                 src=""
@@ -787,6 +797,17 @@
               Delivery
             </button>
 
+
+            <button type="button" class="tab-button" data-tab-target="downloads-panel" role="tab" aria-selected="false">
+              Downloads
+            </button>
+            <button type="button" class="tab-button" data-tab-target="reviews-panel" role="tab" aria-selected="false">
+              Reviews
+            </button>
+            <button type="button" class="tab-button" data-tab-target="warranty-panel" role="tab" aria-selected="false">
+              Warranty
+            </button>
+
             <button
               type="button"
               class="tab-button"
@@ -857,6 +878,52 @@
                 Keep your quotation and payment confirmation.
               </li>
             </ul>
+          </div>
+
+
+          <div class="tab-panel" id="downloads-panel" role="tabpanel">
+            <h2>Installation Guides and Downloads</h2>
+            <div class="download-grid">
+              <a href="downloads/roofing-installation-guide.html" class="download-card" download>
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <div><strong>Roofing Installation Guide</strong><span>HTML guide</span></div>
+              </a>
+              <a href="downloads/mabati-measurement-checklist.txt" class="download-card" download>
+                <i class="fa-solid fa-ruler-combined"></i>
+                <div><strong>Measurement Checklist</strong><span>Text checklist</span></div>
+              </a>
+              <a href="downloads/roofing-accessories-checklist.txt" class="download-card" download>
+                <i class="fa-solid fa-toolbox"></i>
+                <div><strong>Accessories Checklist</strong><span>Text checklist</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="reviews-panel" role="tabpanel">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-summary">
+              <strong id="review-summary-rating">0.0</strong>
+              <span id="review-summary-count">No verified reviews published yet</span>
+            </div>
+            <div id="verified-product-reviews" class="testimonial-grid">
+              <article class="testimonial-card testimonial-placeholder">
+                <i class="fa-solid fa-shield-check"></i>
+                <h3>Verified reviews only</h3>
+                <p>Approved customer feedback can be added here without inventing names or project details.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="warranty-panel" role="tabpanel">
+            <h2>Warranty Information</h2>
+            <div class="warranty-card">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <h3 id="product-warranty-title">Product-specific warranty</h3>
+                <p id="product-warranty-text">Confirm the written warranty for the selected gauge, coating, finish, colour, installation method, and environment before purchase.</p>
+              </div>
+            </div>
+            <p>Warranty eligibility may depend on correct installation, approved fasteners, proper storage, maintenance, and proof of purchase.</p>
           </div>
 
           <div
@@ -1099,8 +1166,8 @@
             <a href="products.html?category=Stone-Coated%20Tiles">
               Stone-Coated Tiles
             </a>
-            <a href="products.html?category=Aluzinc%20Sheets">
-              Aluzinc Sheets
+            <a href="products.html?category=dumuzaz">
+              Ordinary Dumuzaz
             </a>
             <a href="accessories.html">
               Roofing Accessories
@@ -1275,5 +1342,6 @@
   <script src="js/app.js" defer></script>
   <script src="js/product-details.js" defer></script>
 
+  <script src="js/store-enhancements.js" defer></script>
 </body>
 </html>

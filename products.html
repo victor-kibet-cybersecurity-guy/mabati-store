@@ -2,6 +2,7 @@
 <html lang="en-KE">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#9b1c1c">
 
   <meta
     name="viewport"
@@ -14,7 +15,7 @@
 
   <meta
     name="description"
-    content="Shop box profile mabati, corrugated roofing sheets, tile profile mabati, versatile mabati, Roman tiles, Aluzinc sheets, and roofing accessories from ROYAL MABATI FACTORY LTD."
+    content="Shop box profile mabati, ordinary Dumuzaz, corrugated roofing sheets, versatile mabati, Roman tiles, stone-coated tiles, nails, and roofing accessories from ROYAL MABATI FACTORY LTD."
   >
 
   <meta
@@ -86,6 +87,9 @@
     name="twitter:image"
     content="https://www.example.com/images/banners/hero-roofing.jpg"
   >
+
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
   <link
     rel="preconnect"
@@ -278,6 +282,7 @@
           <span
             class="counter-badge"
             id="wishlist-count"
+            data-wishlist-count
             aria-label="Wishlist item count"
           >
             0
@@ -296,6 +301,7 @@
           <span
             class="counter-badge"
             id="cart-count"
+            data-cart-count
             aria-label="Cart item count"
           >
             0
@@ -473,89 +479,19 @@
           aria-label="Product categories"
         >
 
+          
           <div class="category-navigation-inner">
-
-            <button
-              type="button"
-              class="category-tab active"
-              data-category-filter="all"
-            >
-              <i class="fa-solid fa-border-all"></i>
-              All Products
+            <button type="button" class="category-tab active" data-category-filter="all">
+              <i class="fa-solid fa-border-all"></i> All Products
             </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Box Profile"
-            >
-              Box Profile
-            </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Corrugated Profile"
-            >
-              Corrugated
-            </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Tile Profile"
-            >
-              Tile Profile
-            </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Roman Tile"
-            >
-              Roman Tile
-            </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Versatile"
-            >
-              Versatile
-            </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Stone-Coated Tiles"
-            >
-              Stone-Coated
-            </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Aluzinc Sheets"
-            >
-              Aluzinc
-            </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Reject Mabati"
-            >
-              Reject Mabati
-            </button>
-
-            <button
-              type="button"
-              class="category-tab"
-              data-category-filter="Transparent Sheets"
-            >
-              Transparent
-            </button>
-
+            <button type="button" class="category-tab" data-category-filter="box-profile">Box Profile</button>
+            <button type="button" class="category-tab" data-category-filter="dumuzaz">Dumuzaz</button>
+            <button type="button" class="category-tab" data-category-filter="corrugated">Corrugated</button>
+            <button type="button" class="category-tab" data-category-filter="versatile">Versatile</button>
+            <button type="button" class="category-tab" data-category-filter="roman-tile">Roman Tile</button>
+            <button type="button" class="category-tab" data-category-filter="stone-coated">Stone Coated</button>
+            <button type="button" class="category-tab" data-category-filter="roofing-accessories">Accessories</button>
+            <button type="button" class="category-tab" data-category-filter="nails-fasteners">Nails</button>
           </div>
 
         </div>
@@ -629,85 +565,18 @@
 
             </div>
 
+            
             <div class="filter-group">
-
-              <h3>
-                Product Category
-              </h3>
-
-              <label class="filter-option">
-                <input
-                  type="radio"
-                  name="category"
-                  value="all"
-                  checked
-                >
-                <span>All Products</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="radio"
-                  name="category"
-                  value="Box Profile"
-                >
-                <span>Box Profile</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="radio"
-                  name="category"
-                  value="Corrugated Profile"
-                >
-                <span>Corrugated Profile</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="radio"
-                  name="category"
-                  value="Tile Profile"
-                >
-                <span>Tile Profile</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="radio"
-                  name="category"
-                  value="Roman Tile"
-                >
-                <span>Roman Tile</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="radio"
-                  name="category"
-                  value="Versatile"
-                >
-                <span>Versatile</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="radio"
-                  name="category"
-                  value="Stone-Coated Tiles"
-                >
-                <span>Stone-Coated Tiles</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="radio"
-                  name="category"
-                  value="Aluzinc Sheets"
-                >
-                <span>Aluzinc Sheets</span>
-              </label>
-
+              <h3>Product Category</h3>
+              <label class="filter-option"><input type="radio" name="category" value="all" checked><span>All Products</span></label>
+              <label class="filter-option"><input type="radio" name="category" value="box-profile"><span>Box Profile</span></label>
+              <label class="filter-option"><input type="radio" name="category" value="dumuzaz"><span>Ordinary Dumuzaz</span></label>
+              <label class="filter-option"><input type="radio" name="category" value="corrugated"><span>Corrugated</span></label>
+              <label class="filter-option"><input type="radio" name="category" value="versatile"><span>Versatile</span></label>
+              <label class="filter-option"><input type="radio" name="category" value="roman-tile"><span>Roman Tile</span></label>
+              <label class="filter-option"><input type="radio" name="category" value="stone-coated"><span>Stone Coated</span></label>
+              <label class="filter-option"><input type="radio" name="category" value="roofing-accessories"><span>Roofing Accessories</span></label>
+              <label class="filter-option"><input type="radio" name="category" value="nails-fasteners"><span>Nails and Fasteners</span></label>
             </div>
 
             <div class="filter-group">
@@ -717,39 +586,12 @@
               </h3>
 
               <label class="filter-option">
-                <input
-                  type="checkbox"
-                  name="gauge"
-                  value="26"
-                >
-                <span>Gauge 26</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="checkbox"
-                  name="gauge"
-                  value="28"
-                >
+                <input type="checkbox" name="gauge" value="28">
                 <span>Gauge 28</span>
               </label>
-
               <label class="filter-option">
-                <input
-                  type="checkbox"
-                  name="gauge"
-                  value="30"
-                >
+                <input type="checkbox" name="gauge" value="30">
                 <span>Gauge 30</span>
-              </label>
-
-              <label class="filter-option">
-                <input
-                  type="checkbox"
-                  name="gauge"
-                  value="32"
-                >
-                <span>Gauge 32</span>
               </label>
 
             </div>
@@ -1063,6 +905,17 @@
 
             </div>
 
+            <div class="comparison-dock" id="comparison-dock" hidden>
+              <div>
+                <strong id="comparison-count">0 products selected</strong>
+                <span>Choose up to 3 roofing sheets.</span>
+              </div>
+              <div class="comparison-dock-actions">
+                <button type="button" class="btn btn-outline btn-sm" id="clear-comparison">Clear</button>
+                <button type="button" class="btn btn-primary btn-sm" id="open-comparison">Compare</button>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -1172,6 +1025,70 @@
       </div>
 
     </section>
+
+
+    <section class="section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Make an Informed Choice</span>
+          <h2 class="section-title">Gauge and Finish Comparison</h2>
+          <p class="section-description">Understand the difference before choosing your mabati.</p>
+        </div>
+
+        <div class="comparison-guide-grid">
+          <article class="guide-card">
+            <h3>Gauge 28 vs Gauge 30</h3>
+            <div class="guide-columns">
+              <div>
+                <h4>Gauge 28</h4>
+                <ul class="check-list">
+                  <li><i class="fa-solid fa-check"></i> Approximately 0.32mm</li>
+                  <li><i class="fa-solid fa-check"></i> Thicker and stronger</li>
+                  <li><i class="fa-solid fa-check"></i> Better for long-term roofing</li>
+                  <li><i class="fa-solid fa-check"></i> Slightly more expensive</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Gauge 30</h4>
+                <ul class="check-list">
+                  <li><i class="fa-solid fa-check"></i> Approximately 0.25mm</li>
+                  <li><i class="fa-solid fa-check"></i> More affordable</li>
+                  <li><i class="fa-solid fa-check"></i> Suitable for budget projects</li>
+                  <li><i class="fa-solid fa-check"></i> Less resistant to dents</li>
+                </ul>
+              </div>
+            </div>
+            <p><strong>Summary:</strong> Gauge 28 offers better strength; Gauge 30 offers a lower purchase price.</p>
+          </article>
+
+          <article class="guide-card">
+            <h3>Matte vs Glossy Finish</h3>
+            <div class="guide-columns">
+              <div>
+                <h4>Matte Finish</h4>
+                <ul class="check-list">
+                  <li><i class="fa-solid fa-check"></i> Dull, non-shiny surface</li>
+                  <li><i class="fa-solid fa-check"></i> Modern premium appearance</li>
+                  <li><i class="fa-solid fa-check"></i> Reduced sunlight reflection</li>
+                  <li><i class="fa-solid fa-check"></i> Better scratch resistance</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Glossy Finish</h4>
+                <ul class="check-list">
+                  <li><i class="fa-solid fa-check"></i> Shiny reflective surface</li>
+                  <li><i class="fa-solid fa-check"></i> Traditional appearance</li>
+                  <li><i class="fa-solid fa-check"></i> More affordable</li>
+                  <li><i class="fa-solid fa-check"></i> Available in many colours</li>
+                </ul>
+              </div>
+            </div>
+            <p><strong>Summary:</strong> Choose matte for premium long-term colour, or glossy for affordability and shine.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
 
     <!-- ====================================================
          PROMOTIONAL CTA
@@ -1374,32 +1291,32 @@
             aria-label="Product category links"
           >
 
-            <a href="products.html?category=Box%20Profile">
+            <a href="products.html?category=box-profile">
               Box Profile Mabati
             </a>
 
-            <a href="products.html?category=Corrugated%20Profile">
+            <a href="products.html?category=corrugated">
               Corrugated Mabati
             </a>
 
-            <a href="products.html?category=Tile%20Profile">
+            <a href="products.html?category=roman-tile">
               Tile Profile Mabati
             </a>
 
-            <a href="products.html?category=Roman%20Tile">
+            <a href="products.html?category=roman-tile">
               Roman Tile Mabati
             </a>
 
-            <a href="products.html?category=Versatile">
+            <a href="products.html?category=versatile">
               Versatile Mabati
             </a>
 
-            <a href="products.html?category=Stone-Coated%20Tiles">
+            <a href="products.html?category=stone-coated">
               Stone-Coated Tiles
             </a>
 
-            <a href="products.html?category=Aluzinc%20Sheets">
-              Aluzinc Sheets
+            <a href="products.html?category=dumuzaz">
+              Ordinary Dumuzaz
             </a>
 
             <a href="accessories.html">
@@ -1649,6 +1566,18 @@
 
   </div>
 
+
+  <div class="modal" id="comparison-modal" role="dialog" aria-modal="true" aria-labelledby="comparison-title" aria-hidden="true">
+    <div class="modal-content comparison-modal-content">
+      <button type="button" class="modal-close" id="comparison-close" aria-label="Close comparison">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h2 id="comparison-title">Compare Roofing Products</h2>
+      <div id="comparison-content"></div>
+    </div>
+  </div>
+
+
   <!-- ======================================================
        JAVASCRIPT FILES
        ====================================================== -->
@@ -1678,5 +1607,6 @@
     defer
   ></script>
 
+  <script src="js/store-enhancements.js" defer></script>
 </body>
 </html>

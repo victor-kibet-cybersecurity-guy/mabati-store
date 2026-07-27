@@ -235,6 +235,54 @@
     });
   }
 
+
+  function initializeMobileBottomNavigation() {
+    if (document.querySelector(".store-mobile-nav")) return;
+
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const nav = document.createElement("nav");
+    nav.className = "store-mobile-nav";
+    nav.setAttribute("aria-label", "Mobile store navigation");
+    nav.innerHTML = `
+      <a href="index.html" class="${currentPage === "index.html" ? "active" : ""}">
+        <i class="fa-solid fa-house"></i><span>Home</span>
+      </a>
+      <a href="products.html" class="${currentPage === "products.html" ? "active" : ""}">
+        <i class="fa-solid fa-store"></i><span>Products</span>
+      </a>
+      <button type="button" data-mobile-search>
+        <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
+      </button>
+      <a href="wishlist.html" class="${currentPage === "wishlist.html" ? "active" : ""}">
+        <i class="fa-solid fa-heart"></i><span>Wishlist</span>
+      </a>
+      <a href="cart.html" class="${currentPage === "cart.html" ? "active" : ""}">
+        <i class="fa-solid fa-cart-shopping"></i><span>Cart</span>
+      </a>
+    `;
+    document.body.appendChild(nav);
+
+    nav.querySelector("[data-mobile-search]")?.addEventListener("click", () => {
+      const search = document.querySelector("#product-search");
+      if (search) {
+        search.scrollIntoView({ behavior: "smooth", block: "center" });
+        window.setTimeout(() => search.focus(), 350);
+      } else {
+        window.location.href = "products.html?focus=search";
+      }
+    });
+  }
+
+  function initializeImageFallbacks() {
+    document.addEventListener("error", (event) => {
+      const image = event.target;
+      if (!(image instanceof HTMLImageElement) || image.dataset.fallbackApplied) return;
+      image.dataset.fallbackApplied = "true";
+      image.src = "images/favicon.png";
+      image.classList.add("image-fallback");
+    }, true);
+  }
+
   function initializeApp() {
     initializeMobileMenu();
     initializeBackToTop();
@@ -242,6 +290,8 @@
     initializeNewsletter();
     initializeQuickView();
     initializeGlobalSearch();
+    initializeMobileBottomNavigation();
+    initializeImageFallbacks();
   }
 
   window.showToast = showToast;

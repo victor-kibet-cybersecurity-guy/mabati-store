@@ -244,6 +244,8 @@
     renderBadges(product);
     renderRating(product);
     renderRelatedProducts(product);
+    renderWarranty(product);
+    renderReviewSummary(product);
     updateWishlistButton();
     updateEstimatedTotal();
     updateWhatsAppLink();
@@ -255,7 +257,7 @@
     setText("#page-product-title", product.name);
     setText("#breadcrumb-product-name", product.name);
     setText("#product-name", product.name);
-    setText("#product-category", product.category || "Mabati");
+    setText("#product-category", product.categoryName || product.category || "Mabati");
     setText("#product-current-price", formatMoney(product.price));
     setText(
       "#product-price-note",
@@ -657,7 +659,7 @@
 
     const rows = [
       ["Product Name", product.name],
-      ["Category", product.category],
+      ["Category", product.categoryName || product.category],
       ["Subcategory", product.subcategory],
       ["Profile", product.profile],
       ["Gauge", getProductGauges(product).join(", ")],
@@ -924,6 +926,35 @@
       .join("\n");
 
     link.href = createWhatsAppLink(message);
+  }
+
+
+  function renderWarranty(product) {
+    setText(
+      "#product-warranty-text",
+      product.warranty ||
+        "Confirm the written product warranty before purchase."
+    );
+
+    const title = select("#product-warranty-title");
+    if (title) {
+      title.textContent = product.warranty
+        ? "Warranty for this product"
+        : "Product-specific warranty";
+    }
+  }
+
+  function renderReviewSummary(product) {
+    const rating = Math.min(5, Math.max(0, toNumber(product.rating, 0)));
+    const count = Math.max(0, Math.floor(toNumber(product.reviewCount, 0)));
+
+    setText("#review-summary-rating", rating ? rating.toFixed(1) : "0.0");
+    setText(
+      "#review-summary-count",
+      count
+        ? `${count} catalogue rating entr${count === 1 ? "y" : "ies"}; publish only separately verified written reviews.`
+        : "No verified reviews published yet"
+    );
   }
 
   /* ----------------------------------------------------------
