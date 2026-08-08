@@ -2942,6 +2942,9 @@ textarea:focus {
 
   .mobile-contact-bar {
     bottom: 64px;
+    visibility: visible;
+    opacity: 1;
+    transform: translateZ(0);
   }
 
   .store-mobile-nav {
@@ -2950,6 +2953,9 @@ textarea:focus {
     right: 0;
     bottom: 0;
     z-index: 1600;
+    visibility: visible;
+    opacity: 1;
+    transform: translateZ(0);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     min-height: 64px;

@@ -239,30 +239,35 @@
 
 
   function initializeMobileBottomNavigation() {
-    if (document.querySelector(".store-mobile-nav")) return;
-
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
-    const nav = document.createElement("nav");
-    nav.className = "store-mobile-nav";
-    nav.setAttribute("aria-label", "Mobile store navigation");
-    nav.innerHTML = `
-      <a href="index.html" class="${currentPage === "index.html" ? "active" : ""}">
-        <i class="fa-solid fa-house"></i><span>Home</span>
-      </a>
-      <a href="products.html" class="${currentPage === "products.html" ? "active" : ""}">
-        <i class="fa-solid fa-store"></i><span>Products</span>
-      </a>
-      <button type="button" data-mobile-search>
-        <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
-      </button>
-      <a href="wishlist.html" class="${currentPage === "wishlist.html" ? "active" : ""}">
-        <i class="fa-solid fa-heart"></i><span>Wishlist</span>
-      </a>
-      <a href="cart.html" class="${currentPage === "cart.html" ? "active" : ""}">
-        <i class="fa-solid fa-cart-shopping"></i><span>Cart</span>
-      </a>
-    `;
-    document.body.appendChild(nav);
+    let nav = document.querySelector(".store-mobile-nav");
+
+    if (!nav) {
+      nav = document.createElement("nav");
+      nav.className = "store-mobile-nav";
+      nav.setAttribute("aria-label", "Mobile store navigation");
+      nav.innerHTML = `
+        <a href="index.html" class="${currentPage === "index.html" ? "active" : ""}">
+          <i class="fa-solid fa-house"></i><span>Home</span>
+        </a>
+        <a href="products.html" class="${currentPage === "products.html" ? "active" : ""}">
+          <i class="fa-solid fa-store"></i><span>Products</span>
+        </a>
+        <button type="button" data-mobile-search aria-label="Search products">
+          <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
+        </button>
+        <a href="wishlist.html" class="${currentPage === "wishlist.html" ? "active" : ""}">
+          <i class="fa-solid fa-heart"></i><span>Wishlist</span>
+        </a>
+        <a href="cart.html" class="${currentPage === "cart.html" ? "active" : ""}">
+          <i class="fa-solid fa-cart-shopping"></i><span>Cart</span>
+        </a>
+      `;
+      document.body.appendChild(nav);
+    }
+
+    if (nav.dataset.initialized === "true") return;
+    nav.dataset.initialized = "true";
 
     nav.querySelector("[data-mobile-search]")?.addEventListener("click", () => {
       const search = document.querySelector("#product-search");
