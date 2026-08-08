@@ -317,6 +317,29 @@
     frames.forEach((frame) => observer.observe(frame));
   }
 
+  function initializeFAQs() {
+    selectAll(".faq-item").forEach((item, index) => {
+      const question = select(".faq-question", item);
+      const answer = select(".faq-answer", item);
+      if (!question || !answer) return;
+
+      const answerId = answer.id || `faq-answer-${index + 1}`;
+      answer.id = answerId;
+      question.setAttribute("aria-controls", answerId);
+
+      const setExpanded = (expanded) => {
+        item.classList.toggle("active", expanded);
+        question.setAttribute("aria-expanded", String(expanded));
+        answer.hidden = !expanded;
+      };
+
+      setExpanded(item.classList.contains("active"));
+      question.addEventListener("click", () => {
+        setExpanded(question.getAttribute("aria-expanded") !== "true");
+      });
+    });
+  }
+
   function initializeApp() {
     initializeMobileMenu();
     initializeBackToTop();
@@ -327,6 +350,7 @@
     initializeMobileBottomNavigation();
     initializeImageFallbacks();
     initializeLazyFrames();
+    initializeFAQs();
   }
 
   window.showToast = showToast;
