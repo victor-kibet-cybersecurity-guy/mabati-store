@@ -498,8 +498,7 @@
             )}"
             target="_blank"
             rel="noopener"
-            class="btn btn-whatsapp btn-sm btn-block"
-            style="margin-top: 10px;"
+            class="btn btn-whatsapp btn-sm btn-block product-whatsapp-action"
           >
             <i class="fa-brands fa-whatsapp"></i>
             Order on WhatsApp
