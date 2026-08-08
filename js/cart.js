@@ -1001,6 +1001,24 @@
       return;
     }
 
+    const customerForm = select("#checkout-customer-form");
+    const customer = {
+      name: select("#checkout-name")?.value.trim() || "",
+      phone: select("#checkout-phone")?.value.trim() || "",
+      county: select("#checkout-county")?.value.trim() || "",
+      location: select("#checkout-location")?.value.trim() || "",
+      instructions: select("#checkout-instructions")?.value.trim() || ""
+    };
+
+    if (customerForm && !customerForm.checkValidity()) {
+      customerForm.reportValidity();
+      showNotification(
+        "Please complete your name, phone number, county, and delivery location.",
+        "warning"
+      );
+      return;
+    }
+
     const totals = calculateCartTotals(cart);
 
     const orderLines = validItems.flatMap(
@@ -1038,20 +1056,20 @@
       ...orderLines,
       `Subtotal: ${formatMoney(totals.subtotal)}`,
       "Delivery: Free",
-      `Estimated Total: ${formatMoney(totals.total)}`,
+      `Grand Total: ${formatMoney(totals.total)}`,
       "",
       "Please confirm:",
-      "- Current prices",
-      "- Product availability",
-      "- Final measurements",
       "- Delivery location",
       "- Payment instructions",
       "",
-      "Customer Name:",
-      "Phone Number:",
-      "County:",
-      "Town/Delivery Location:"
-    ].join("\n");
+      `Customer Name: ${customer.name}`,
+      `Phone Number: ${customer.phone}`,
+      `County: ${customer.county}`,
+      `Town/Delivery Location: ${customer.location}`,
+      customer.instructions
+        ? `Additional Instructions: ${customer.instructions}`
+        : null
+    ].filter((line) => line !== null).join("\n");
 
     window.open(
       createWhatsAppLink(message),
