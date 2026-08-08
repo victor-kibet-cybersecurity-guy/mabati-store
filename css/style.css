@@ -2324,6 +2324,21 @@ textarea:focus {
   }
 }
 
+/* The repository does not include the referenced banner files. Keep the
+   branded gradients and avoid repeated 404 requests on every page load. */
+.hero {
+  background: linear-gradient(120deg, #111820, #841419 58%, #b32025);
+}
+
+.promo-banner {
+  background: linear-gradient(100deg, #841419, #b32025 68%, #d83b40);
+}
+
+.page-banner,
+.location-hero {
+  background: linear-gradient(120deg, #15191f, #561217 58%, #841419);
+}
+
 /* ------------------------------
    38. EXTRA SMALL PHONES
 ------------------------------ */
@@ -3012,6 +3027,122 @@ textarea:focus {
   .btn,
   .category-tab {
     transition: none;
+  }
+}
+
+/* ==========================================================
+   SITE-WIDE RESPONSIVE AND RENDERING HARDENING
+   ========================================================== */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+main,
+section,
+.container,
+.delivery-layout,
+.contact-layout,
+.calculator-layout,
+.catalog-layout,
+.product-details,
+.cart-layout,
+.footer-grid,
+.form-grid,
+.delivery-layout > *,
+.contact-layout > *,
+.calculator-layout > *,
+.catalog-layout > *,
+.product-details > *,
+.cart-layout > * {
+  min-width: 0;
+}
+
+.delivery-layout img,
+.contact-layout img,
+iframe,
+video,
+canvas {
+  width: 100%;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+  max-width: 100%;
+}
+
+.comparison-table-wrap,
+.product-tabs,
+.category-navigation {
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+@supports (content-visibility: auto) {
+  main > section:not(:first-child) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 720px;
+  }
+}
+
+@media (max-width: 900px) {
+  .delivery-layout,
+  .contact-layout,
+  .calculator-layout,
+  .product-details,
+  .cart-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .delivery-layout > *,
+  .contact-layout > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  h1,
+  .page-banner h1 {
+    font-size: clamp(2rem, 10vw, 2.7rem);
+    overflow-wrap: anywhere;
+  }
+
+  h2,
+  .section-title {
+    font-size: clamp(1.65rem, 8vw, 2.15rem);
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions,
+  .product-card-buttons,
+  .product-detail-actions,
+  .promo-actions {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+
+  .hero-actions .btn,
+  .product-card-buttons .btn,
+  .product-detail-actions .btn,
+  .promo-actions .btn {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .delivery-step,
+  .filter-option,
+  .footer-policy-links {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .comparison-table {
+    min-width: 640px;
   }
 }
 
