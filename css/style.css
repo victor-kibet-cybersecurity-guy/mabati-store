@@ -4696,6 +4696,14 @@ button {
   overflow-wrap: anywhere;
 }
 
+.blog-card-content h3 a {
+  color: inherit;
+}
+
+.blog-card-content h3 a:hover {
+  color: var(--primary);
+}
+
 .blog-card-content .blog-link {
   display: inline-flex;
   align-items: center;
