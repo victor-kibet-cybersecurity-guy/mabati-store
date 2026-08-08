@@ -334,19 +334,19 @@ header {
   padding-block: 56px;
 }
 
-footer {
+.article-footer {
   padding: 34px 0;
   background: #17191d;
   color: #dfe1e5;
 }
 
-.footer-grid {
+.article-footer-grid {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 24px;
 }
 
-footer a {
+.article-footer a {
   color: var(--white);
 }
 
@@ -385,7 +385,7 @@ footer a {
   }
 
   .top .container,
-  .footer-grid {
+  .article-footer-grid {
     grid-template-columns: 1fr;
     flex-direction: column;
   }
