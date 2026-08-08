@@ -2405,7 +2405,6 @@ textarea:focus {
 
   .category-navigation-inner {
     scroll-snap-type: x proximity;
-    -webkit-overflow-scrolling: touch;
   }
 
   .category-tab {
@@ -3037,7 +3036,7 @@ textarea:focus {
 html,
 body {
   max-width: 100%;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 main,
@@ -3079,8 +3078,7 @@ button {
 .comparison-table-wrap,
 .product-tabs,
 .category-navigation {
-  overscroll-behavior-inline: contain;
-  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
 }
 
 @supports (content-visibility: auto) {
