@@ -219,7 +219,7 @@ const PRODUCTS = [
     "price": 250,
     "oldPrice": null,
     "priceUnit": "per metre",
-    "priceNote": "Glossy or standard finish depending on available stock.",
+    "priceNote": "Available in silver only.",
     "gauge": [
       "30"
     ],
@@ -247,15 +247,10 @@ const PRODUCTS = [
     "effectiveWidth": 0.85,
     "totalWidth": 0.9,
     "colours": [
-      "Brick Red",
-      "Charcoal Grey",
-      "Forest Green",
-      "Coffee Brown",
-      "Blue",
-      "Natural Silver"
+      "Silver"
     ],
-    "finish": "Glossy",
-    "coating": "Colour-coated or galvanized steel",
+    "finish": "Silver",
+    "coating": "Galvanized steel",
     "image": "assets/images/products/dumuzaz-30g.jpg",
     "gallery": [
       "assets/images/products/dumuzaz-30g.jpg"
@@ -264,7 +259,7 @@ const PRODUCTS = [
       "Lowest-cost roofing option",
       "Custom lengths",
       "Easy installation",
-      "Available in popular colours"
+      "Available in silver only"
     ],
     "applications": [
       "Budget homes",
@@ -294,7 +289,7 @@ const PRODUCTS = [
     "price": 300,
     "oldPrice": null,
     "priceUnit": "per metre",
-    "priceNote": "Gauge 28 is thicker and more durable than Gauge 30.",
+    "priceNote": "Gauge 28 is thicker than Gauge 30. Available in silver only.",
     "gauge": [
       "28"
     ],
@@ -322,15 +317,10 @@ const PRODUCTS = [
     "effectiveWidth": 0.85,
     "totalWidth": 0.9,
     "colours": [
-      "Brick Red",
-      "Charcoal Grey",
-      "Forest Green",
-      "Coffee Brown",
-      "Blue",
-      "Natural Silver"
+      "Silver"
     ],
-    "finish": "Glossy",
-    "coating": "Colour-coated or galvanized steel",
+    "finish": "Silver",
+    "coating": "Galvanized steel",
     "image": "assets/images/products/dumuzaz-28g.jpg",
     "gallery": [
       "assets/images/products/dumuzaz-28g.jpg"
@@ -339,7 +329,8 @@ const PRODUCTS = [
       "Stronger 28G sheet",
       "Affordable",
       "Custom lengths",
-      "Easy installation"
+      "Easy installation",
+      "Available in silver only"
     ],
     "applications": [
       "Homes",
