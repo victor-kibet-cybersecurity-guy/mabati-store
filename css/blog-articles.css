@@ -269,6 +269,8 @@ a:hover {
 }
 
 .related {
+  content-visibility: visible !important;
+  contain-intrinsic-size: none !important;
   padding: 52px 0 68px;
   border-top: 1px solid var(--line);
   background: var(--white);
