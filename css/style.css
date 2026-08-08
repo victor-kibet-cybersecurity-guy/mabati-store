@@ -4177,3 +4177,27 @@ button {
     transition: none;
   }
 }
+
+
+/* Utilities generated from former inline HTML declarations */
+.u-inline-001 { background: #166534; }
+.u-inline-002 { background: #4b5563; }
+.u-inline-003 { background: #78350f; }
+.u-inline-004 { background: #9b1c1c; }
+.u-inline-005 { color: var(--text-grey); font-size: 0.85rem; margin-top: 16px; }
+.u-inline-006 { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.u-inline-007 { display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; margin-bottom: 22px; }
+.u-inline-008 { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; margin-top: 24px; }
+.u-inline-009 { display: grid; gap: 10px; color: var(--text-grey); font-size: 0.86rem; }
+.u-inline-010 { font-size: 1rem; }
+.u-inline-011 { height: 210px; }
+.u-inline-012 { height: 430px; }
+.u-inline-013 { justify-content: center; }
+.u-inline-014 { margin-right: 7px; }
+.u-inline-015 { margin-top: 10px; }
+.u-inline-016 { margin-top: 20px; }
+.u-inline-017 { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--medium-grey); }
+.u-inline-018 { margin-top: 24px; }
+.u-inline-019 { margin-top: 35px; }
+.u-inline-020 { margin: 0; color: var(--text-grey); }
+.u-inline-021 { margin: 0; font-size: 1.2rem; }
