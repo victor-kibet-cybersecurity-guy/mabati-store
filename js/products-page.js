@@ -335,7 +335,7 @@
               loading="lazy"
               width="500"
               height="400"
-              onerror="this.onerror=null;this.src=\'images/favicon.png\';"
+              onerror="this.onerror=null;this.hidden=true;this.parentElement.classList.add(\'product-image-missing\');"
             >
           </a>
 

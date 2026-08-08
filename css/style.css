@@ -2367,6 +2367,58 @@ textarea:focus {
   }
 }
 
+/* Mobile catalogue hardening */
+.product-image-wrap a.product-image-missing {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--light-grey);
+  color: var(--text-grey);
+  text-align: center;
+}
+
+.product-image-wrap a.product-image-missing::after {
+  content: "Product image coming soon";
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: min(100% - 28px, var(--container));
+  }
+
+  .category-navigation-inner {
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .category-tab {
+    scroll-snap-align: start;
+    min-height: 44px;
+  }
+
+  .catalog-toolbar,
+  .catalog-toolbar > *,
+  .search-box,
+  .search-box input,
+  .filter-toggle {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .product-card,
+  .product-content {
+    min-width: 0;
+  }
+
+  .product-title,
+  .product-meta,
+  .product-price {
+    overflow-wrap: anywhere;
+  }
+}
+
 /* ------------------------------
    40. PRINT
 ------------------------------ */
