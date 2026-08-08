@@ -2897,6 +2897,10 @@ textarea:focus {
   display: none;
 }
 
+.mobile-action-dock {
+  display: none;
+}
+
 .image-fallback {
   object-fit: contain !important;
   padding: 28px;
@@ -3025,6 +3029,45 @@ textarea:focus {
     min-width: 0;
     max-width: none;
     width: 100%;
+  }
+}
+
+/* Keep the landing-page actions in one persistent mobile compositor layer. */
+@media (max-width: 650px) {
+  .mobile-action-dock {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1600;
+    display: grid;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: var(--white);
+    box-shadow: 0 -5px 18px rgba(0, 0, 0, 0.12);
+    isolation: isolate;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .mobile-action-dock .mobile-contact-bar,
+  .mobile-action-dock .store-mobile-nav {
+    position: static;
+    inset: auto;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+
+  .mobile-action-dock .mobile-contact-bar {
+    z-index: auto;
+    min-height: 62px;
+  }
+
+  .mobile-action-dock .store-mobile-nav {
+    z-index: auto;
+    min-height: 64px;
+    padding-bottom: 6px;
+    box-shadow: none;
   }
 }
 
