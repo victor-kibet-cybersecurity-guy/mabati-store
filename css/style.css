@@ -2347,6 +2347,14 @@ textarea:focus {
   }
 }
 
+/* Let browsers defer below-the-fold layout and painting on long pages. */
+@supports (content-visibility: auto) {
+  main > section:not(:first-child) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 700px;
+  }
+}
+
 /* The repository does not include the referenced banner files. Keep the
    branded gradients and avoid repeated 404 requests on every page load. */
 .hero {

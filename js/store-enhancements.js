@@ -20,7 +20,7 @@
   }
 
   function productImage(product) {
-    return product?.image || "images/favicon.png";
+    return product?.image || "images/roofing-placeholder.jpg";
   }
 
   function injectMegaMenu() {
@@ -156,7 +156,7 @@
 
       results.innerHTML = matches.map((product) => `
         <a class="advanced-search-result" href="product-details.html?id=${encodeURIComponent(product.id)}">
-          <img src="${escapeHTML(productImage(product))}" alt="${escapeHTML(product.name)}" loading="lazy" onerror="this.onerror=null;this.src='images/favicon.png';">
+          <img src="${escapeHTML(productImage(product))}" alt="${escapeHTML(product.name)}" loading="lazy" onerror="this.onerror=null;this.src='images/roofing-placeholder.jpg';">
           <div>
             <strong>${escapeHTML(product.name)}</strong>
             <span>${escapeHTML(product.categoryName || product.category || "")}</span>

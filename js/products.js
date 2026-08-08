@@ -106,9 +106,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/box-profile-30g.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/box-profile-30g.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Modern box profile",
@@ -181,9 +181,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/box-profile-28g.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/box-profile-28g.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Thicker 28G steel",
@@ -251,9 +251,9 @@ const PRODUCTS = [
     ],
     "finish": "Silver",
     "coating": "Galvanized steel",
-    "image": "assets/images/products/dumuzaz-30g.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/dumuzaz-30g.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Lowest-cost roofing option",
@@ -321,9 +321,9 @@ const PRODUCTS = [
     ],
     "finish": "Silver",
     "coating": "Galvanized steel",
-    "image": "assets/images/products/dumuzaz-28g.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/dumuzaz-28g.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Stronger 28G sheet",
@@ -397,9 +397,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/corrugated-30g.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/corrugated-30g.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Traditional corrugated profile",
@@ -472,9 +472,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/corrugated-28g.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/corrugated-28g.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Thicker 28G steel",
@@ -542,9 +542,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/royal-versa-tile.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/royal-versa-tile.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Elegant stepped profile",
@@ -612,9 +612,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/versa-tile-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/versa-tile-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Thicker 28G steel",
@@ -682,9 +682,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/royal-eurotile.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/royal-eurotile.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Roman tile appearance",
@@ -752,9 +752,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/eurotile-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/eurotile-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Thicker 28G steel",
@@ -826,9 +826,9 @@ const PRODUCTS = [
     ],
     "finish": "Matte",
     "coating": "Premium matte-coated galvanized steel",
-    "image": "assets/images/products/matte-box-profile.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/matte-box-profile.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Non-shiny premium finish",
@@ -900,9 +900,9 @@ const PRODUCTS = [
     ],
     "finish": "Matte",
     "coating": "Premium matte-coated galvanized steel",
-    "image": "assets/images/products/matte-box-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/matte-box-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Thicker 28G steel",
@@ -974,9 +974,9 @@ const PRODUCTS = [
     ],
     "finish": "Matte",
     "coating": "Premium matte-coated galvanized steel",
-    "image": "assets/images/products/corrugated-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/corrugated-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Matte colour finish",
@@ -1048,9 +1048,9 @@ const PRODUCTS = [
     ],
     "finish": "Matte",
     "coating": "Premium matte-coated galvanized steel",
-    "image": "assets/images/products/corrugated-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/corrugated-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Stronger 28G steel",
@@ -1118,9 +1118,9 @@ const PRODUCTS = [
     ],
     "finish": "Matte",
     "coating": "Premium matte-coated galvanized steel",
-    "image": "assets/images/products/versa-tile-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/versa-tile-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Premium matte look",
@@ -1188,9 +1188,9 @@ const PRODUCTS = [
     ],
     "finish": "Matte",
     "coating": "Premium matte-coated galvanized steel",
-    "image": "assets/images/products/versa-tile-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/versa-tile-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Strong Gauge 28",
@@ -1258,9 +1258,9 @@ const PRODUCTS = [
     ],
     "finish": "Matte",
     "coating": "Premium matte-coated galvanized steel",
-    "image": "assets/images/products/eurotile-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/eurotile-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Roman tile profile",
@@ -1328,9 +1328,9 @@ const PRODUCTS = [
     ],
     "finish": "Matte",
     "coating": "Premium matte-coated galvanized steel",
-    "image": "assets/images/products/eurotile-grey.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/eurotile-grey.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Strong Gauge 28",
@@ -1383,9 +1383,9 @@ const PRODUCTS = [
     ],
     "finish": "Stone coated",
     "coating": "Stone granules over coated steel",
-    "image": "assets/images/products/stone-coated-classic.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/stone-coated-classic.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Premium textured finish",
@@ -1443,9 +1443,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy or matte",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/ridge-cap.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/ridge-cap.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Roof ridge protection",
@@ -1499,9 +1499,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy or matte",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/roof-valley.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/roof-valley.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Improves drainage",
@@ -1557,9 +1557,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy or matte",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/rainwater-gutter.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/rainwater-gutter.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Controls rainwater",
@@ -1612,9 +1612,9 @@ const PRODUCTS = [
     ],
     "finish": "Glossy or matte",
     "coating": "Pre-painted galvanized steel",
-    "image": "assets/images/products/rainwater-gutter.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/rainwater-gutter.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "10-metre value run",
@@ -1663,9 +1663,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard",
     "coating": "Protected metal",
-    "image": "assets/images/products/gutter-bracket.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/gutter-bracket.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Secure gutter support",
@@ -1713,9 +1713,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard",
     "coating": "Colour-coated or galvanized",
-    "image": "assets/images/products/downpipe.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/downpipe.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Directs rainwater",
@@ -1764,9 +1764,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard",
     "coating": "Colour-coated or galvanized",
-    "image": "assets/images/products/gutter-fittings.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/gutter-fittings.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Multiple fitting types",
@@ -1815,9 +1815,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard",
     "coating": "Colour-coated or galvanized",
-    "image": "assets/images/products/gutter-outlet.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/gutter-outlet.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Connects gutter to downpipe",
@@ -1861,9 +1861,9 @@ const PRODUCTS = [
     ],
     "finish": "Galvanized",
     "coating": "Zinc-coated steel",
-    "image": "assets/images/products/roofing-nails.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/roofing-nails.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Washer included",
@@ -1909,9 +1909,9 @@ const PRODUCTS = [
     ],
     "finish": "Galvanized",
     "coating": "Zinc-coated steel",
-    "image": "assets/images/products/roofing-nails.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/roofing-nails.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Wholesale 50kg bag",
@@ -1957,9 +1957,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard steel",
     "coating": "Standard",
-    "image": "assets/images/products/ordinary-nails.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/ordinary-nails.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "1–6 inch sizes",
@@ -2006,9 +2006,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard steel",
     "coating": "Standard",
-    "image": "assets/images/products/ordinary-nails.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/ordinary-nails.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Wholesale 50kg bag",
@@ -2053,9 +2053,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard steel",
     "coating": "Standard",
-    "image": "assets/images/products/ordinary-nails.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/ordinary-nails.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Wholesale 50kg bag",
@@ -2100,9 +2100,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard steel",
     "coating": "Standard",
-    "image": "assets/images/products/ordinary-nails.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/ordinary-nails.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Wholesale 50kg bag",
@@ -2147,9 +2147,9 @@ const PRODUCTS = [
     ],
     "finish": "Standard steel",
     "coating": "Standard",
-    "image": "assets/images/products/ordinary-nails.jpg",
+    "image": "images/roofing-placeholder.jpg",
     "gallery": [
-      "assets/images/products/ordinary-nails.jpg"
+      "images/roofing-placeholder.jpg"
     ],
     "features": [
       "Wholesale 50kg bag",
