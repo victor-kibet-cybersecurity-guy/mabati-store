@@ -52,7 +52,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   background: var(--white);
   color: var(--charcoal);
   line-height: 1.6;
@@ -493,9 +493,7 @@ textarea:focus-visible {
   min-height: 680px;
   display: grid;
   align-items: center;
-  background:
-    linear-gradient(rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.55)),
-    url("../images/banners/hero-roofing.jpg") center/cover no-repeat;
+  background: linear-gradient(120deg, #111820, #841419 58%, #b32025);
   color: var(--white);
 }
 
@@ -861,9 +859,7 @@ textarea:focus-visible {
   overflow: hidden;
   padding: 54px;
   border-radius: var(--radius-lg);
-  background:
-    linear-gradient(90deg, rgba(132, 20, 25, 0.97), rgba(179, 32, 37, 0.86)),
-    url("../images/banners/roofing-package.jpg") center/cover no-repeat;
+  background: linear-gradient(100deg, #841419, #b32025 68%, #d83b40);
   color: var(--white);
 }
 
@@ -1988,9 +1984,7 @@ textarea:focus {
 
 .page-banner {
   padding: 90px 0;
-  background:
-    linear-gradient(rgba(20, 20, 20, 0.72), rgba(20, 20, 20, 0.72)),
-    url("../images/banners/page-banner.jpg") center/cover no-repeat;
+  background: linear-gradient(120deg, #15191f, #561217 58%, #841419);
   color: var(--white);
   text-align: center;
 }
@@ -2148,7 +2142,8 @@ textarea:focus {
   }
 
   .hero {
-    min-height: 620px;
+    min-height: 540px;
+    padding-block: 64px;
   }
 
   .hero h1 {
@@ -2344,6 +2339,11 @@ textarea:focus {
 ------------------------------ */
 
 @media (max-width: 400px) {
+  .hero {
+    min-height: 500px;
+    padding-block: 52px;
+  }
+
   .hero h1 {
     font-size: 2.1rem;
   }
@@ -3152,9 +3152,7 @@ button {
 .hero {
   position: relative;
   isolation: isolate;
-  background:
-    linear-gradient(90deg, rgba(16, 19, 24, .92), rgba(16, 19, 24, .52)),
-    url("../images/banners/hero-roofing.jpg") center/cover no-repeat;
+  background: linear-gradient(120deg, #111820, #841419 58%, #b32025);
 }
 
 .hero::after {
@@ -3458,9 +3456,7 @@ button {
 
 .location-hero {
   padding: clamp(75px, 10vw, 125px) 0;
-  background:
-    linear-gradient(90deg, rgba(15,18,22,.92), rgba(15,18,22,.58)),
-    url("../images/banners/hero-roofing.jpg") center/cover no-repeat;
+  background: linear-gradient(120deg, #15191f, #561217 58%, #841419);
   color: #fff;
 }
 

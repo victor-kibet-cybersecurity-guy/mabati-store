@@ -7,6 +7,8 @@
     internationalPhone: "254752523422"
   };
 
+  const TRANSPARENT_IMAGE = "data:image/gif;base64,R0lGODlhAQABAAAAACw=";
+
   function select(selector, parent = document) {
     return parent.querySelector(selector);
   }
@@ -278,9 +280,35 @@
       const image = event.target;
       if (!(image instanceof HTMLImageElement) || image.dataset.fallbackApplied) return;
       image.dataset.fallbackApplied = "true";
-      image.src = "images/favicon.png";
+      image.src = TRANSPARENT_IMAGE;
       image.classList.add("image-fallback");
     }, true);
+  }
+
+  function initializeLazyFrames() {
+    const frames = selectAll("iframe[data-lazy-src]");
+    if (frames.length === 0) return;
+
+    const loadFrame = (frame) => {
+      if (!frame.dataset.lazySrc) return;
+      frame.src = frame.dataset.lazySrc;
+      frame.removeAttribute("data-lazy-src");
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      window.addEventListener("load", () => frames.forEach(loadFrame), { once: true });
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        loadFrame(entry.target);
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: "400px 0px" });
+
+    frames.forEach((frame) => observer.observe(frame));
   }
 
   function initializeApp() {
@@ -292,6 +320,7 @@
     initializeGlobalSearch();
     initializeMobileBottomNavigation();
     initializeImageFallbacks();
+    initializeLazyFrames();
   }
 
   window.showToast = showToast;
