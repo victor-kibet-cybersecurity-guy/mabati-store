@@ -285,7 +285,7 @@
             <span><i class="fa-solid fa-layer-group"></i> Gauge: ${escapeHTML(gauges)}</span>
             <span><i class="fa-solid fa-paint-roller"></i> ${escapeHTML(product.finish || "Roofing finish")}</span>
           </div>
-          <p class="product-colours"><strong>Colours:</strong> ${escapeHTML(colours)}</p>
+          ${colours ? `<p class="product-colours"><strong>Colours:</strong> ${escapeHTML(colours)}</p>` : ""}
           <div class="product-price">
             <span class="current-price">${formatProductPrice(product)}</span>
           </div>

@@ -974,10 +974,14 @@
 
           </div>
 
-          <p class="product-colours">
-            <strong>Colours:</strong>
-            ${escapeHTML(colours)}
-          </p>
+          ${
+            colours
+              ? `<p class="product-colours">
+                  <strong>Colours:</strong>
+                  ${escapeHTML(colours)}
+                </p>`
+              : ""
+          }
 
           <div class="product-price">
 

@@ -1587,7 +1587,7 @@ const PRODUCTS = [
     "price": 650,
     "oldPrice": null,
     "priceUnit": "per metre",
-    "priceNote": "A 10-metre gutter run is available at KSh 3,500. Confirm profile and colour.",
+    "priceNote": "A 10-metre gutter run is available at KSh 3,500. Confirm the gutter profile before ordering.",
     "gauge": [
       "30",
       "28"
@@ -1602,13 +1602,7 @@ const PRODUCTS = [
     ],
     "effectiveWidth": null,
     "totalWidth": null,
-    "colours": [
-      "Charcoal Grey",
-      "Coffee Brown",
-      "Brick Red",
-      "Forest Green",
-      "Galvanized Silver"
-    ],
+    "colours": [],
     "finish": "Glossy or matte",
     "coating": "Pre-painted galvanized steel",
     "image": "images/rainwater-gutter.jpeg?v=20260809-1",
@@ -1657,13 +1651,7 @@ const PRODUCTS = [
     "availableLengths": [],
     "effectiveWidth": null,
     "totalWidth": null,
-    "colours": [
-      "Charcoal Grey",
-      "Coffee Brown",
-      "Brick Red",
-      "Forest Green",
-      "Galvanized Silver"
-    ],
+    "colours": [],
     "finish": "Glossy or matte",
     "coating": "Pre-painted galvanized steel",
     "image": "images/rainwater-gutter.jpeg?v=20260809-1",
@@ -1673,7 +1661,7 @@ const PRODUCTS = [
     "features": [
       "10-metre value run",
       "Rainwater control",
-      "Colour options"
+      "Long roof-edge coverage"
     ],
     "applications": [
       "Homes",
