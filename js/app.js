@@ -7,7 +7,7 @@
     internationalPhone: "254752523422"
   };
 
-  const TRANSPARENT_IMAGE = "data:image/gif;base64,R0lGODlhAQABAAAAACw=";
+  const TRANSPARENT_IMAGE = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
   function select(selector, parent = document) {
     return parent.querySelector(selector);
@@ -262,7 +262,7 @@
       <article class="product-card" data-product-id="${escapeHTML(product.id)}">
         <div class="product-image-wrap">
           <img
-            src="${escapeHTML(product.image || "images/roofing-placeholder.jpg")}"
+            src="${escapeHTML(product.image || "images/roofing-placeholder-mobile.webp")}"
             alt="${escapeHTML(product.name)}"
             loading="lazy"
             decoding="async"
