@@ -1466,6 +1466,60 @@ const PRODUCTS = [
     "warranty": "Workmanship and coating terms depend on the selected material."
   },
   {
+    "id": "roll-top",
+    "slug": "roll-top",
+    "name": "Roll Top Ridge Cap",
+    "category": "roofing-accessories",
+    "categoryName": "Roofing Accessories",
+    "brand": "ROYAL MABATI FACTORY LTD",
+    "shortDescription": "Colour-matched roll top for sealing and finishing the top of a pitched roof.",
+    "description": "Roll tops provide a neat, weather-resistant decorative finish along the roof ridge.",
+    "price": 300,
+    "oldPrice": null,
+    "priceUnit": "per piece (2 m)",
+    "priceNote": "KSh 300 per 2-metre piece. Confirm colour and gauge before ordering.",
+    "gauge": [
+      "30",
+      "28"
+    ],
+    "defaultGauge": "30",
+    "availableLengths": [
+      2
+    ],
+    "effectiveWidth": null,
+    "totalWidth": null,
+    "colours": [
+      "Brick Red",
+      "Charcoal Grey",
+      "Coffee Brown",
+      "Forest Green",
+      "Maroon"
+    ],
+    "finish": "Glossy or matte",
+    "coating": "Pre-painted galvanized steel",
+    "image": "images/roll-top.jpeg?v=20260809-3",
+    "gallery": [
+      "images/roll-top.jpeg?v=20260809-3"
+    ],
+    "features": [
+      "Roof ridge protection",
+      "Colour matching",
+      "Standard 2-metre piece"
+    ],
+    "applications": [
+      "Pitched roofs"
+    ],
+    "stockStatus": "In Stock",
+    "availability": true,
+    "featured": false,
+    "bestseller": true,
+    "onSale": false,
+    "freeDelivery": true,
+    "rating": 4.8,
+    "reviewCount": 61,
+    "warranty": "Workmanship and coating terms depend on the selected material."
+  },
+  {
     "id": "roof-valley",
     "slug": "roof-valley",
     "name": "Roof Valley",
