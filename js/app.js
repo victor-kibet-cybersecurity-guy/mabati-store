@@ -328,6 +328,60 @@
     });
   }
 
+  function initializeProjectGallery() {
+    const items = selectAll(".gallery-item");
+    if (items.length === 0) return;
+
+    const lightbox = select("#gallery-lightbox");
+    const lightboxImage = select("#lightbox-image");
+    const closeButton = select("#lightbox-close");
+
+    const closeLightbox = () => {
+      if (!lightbox) return;
+      lightbox.classList.remove("active");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("menu-open");
+      if (lightboxImage) {
+        lightboxImage.src = "";
+        lightboxImage.alt = "";
+      }
+    };
+
+    items.forEach((item) => {
+      item.addEventListener("click", () => {
+        if (!lightbox || !lightboxImage || !item.dataset.image) return;
+        const sourceImage = select("img", item);
+        lightboxImage.src = item.dataset.image;
+        lightboxImage.alt = sourceImage?.alt || "Roofing project";
+        lightbox.classList.add("active");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("menu-open");
+      });
+    });
+
+    selectAll(".gallery-filter").forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter || "all";
+        selectAll(".gallery-filter").forEach((item) => {
+          item.classList.toggle("active", item === button);
+        });
+        items.forEach((item) => {
+          item.hidden = filter !== "all" && !String(item.dataset.category || "").includes(filter);
+        });
+      });
+    });
+
+    closeButton?.addEventListener("click", closeLightbox);
+    lightbox?.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && lightbox?.classList.contains("active")) {
+        closeLightbox();
+      }
+    });
+  }
+
 
   function initializeMobileBottomNavigation() {
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
@@ -439,6 +493,7 @@
     initializeGlobalSearch();
     renderFeaturedProducts();
     initializeFeaturedProductActions();
+    initializeProjectGallery();
     initializeMobileBottomNavigation();
     initializeImageFallbacks();
     initializeLazyFrames();
