@@ -238,6 +238,96 @@
     });
   }
 
+  function formatProductPrice(product) {
+    if (typeof window.formatKSh === "function") {
+      return window.formatKSh(product.price);
+    }
+
+    return `KSh ${Number(product.price || 0).toLocaleString("en-KE")}`;
+  }
+
+  function createFeaturedProductCard(product) {
+    const gauges = Array.isArray(product.gauge)
+      ? product.gauge.join(", ")
+      : product.gauge || product.defaultGauge || "Confirm";
+    const colours = Array.isArray(product.colours)
+      ? product.colours.slice(0, 3).join(", ")
+      : product.colours || "Confirm available colours";
+
+    return `
+      <article class="product-card" data-product-id="${escapeHTML(product.id)}">
+        <div class="product-image-wrap">
+          <img
+            src="${escapeHTML(product.image || "images/roofing-placeholder.jpg")}"
+            alt="${escapeHTML(product.name)}"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="product-badges">
+            ${product.freeDelivery ? '<span class="badge badge-delivery">Free Delivery</span>' : ""}
+            <span class="badge badge-stock">In Stock</span>
+          </div>
+          <div class="product-actions-top">
+            <button type="button" class="icon-btn" data-wishlist-id="${escapeHTML(product.id)}" aria-label="Add ${escapeHTML(product.name)} to wishlist">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button type="button" class="icon-btn" data-quick-view-id="${escapeHTML(product.id)}" aria-label="Quick view ${escapeHTML(product.name)}">
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <p class="product-category">${escapeHTML(product.categoryName || product.category || "Mabati")}</p>
+          <h3 class="product-title">
+            <a href="product-details.html?id=${encodeURIComponent(product.id)}">${escapeHTML(product.name)}</a>
+          </h3>
+          <div class="product-meta">
+            <span><i class="fa-solid fa-layer-group"></i> Gauge: ${escapeHTML(gauges)}</span>
+            <span><i class="fa-solid fa-paint-roller"></i> ${escapeHTML(product.finish || "Roofing finish")}</span>
+          </div>
+          <p class="product-colours"><strong>Colours:</strong> ${escapeHTML(colours)}</p>
+          <div class="product-price">
+            <span class="current-price">${formatProductPrice(product)}</span>
+          </div>
+          <p class="price-note">${escapeHTML(product.priceUnit || "Confirm price unit")}</p>
+          <div class="product-card-buttons">
+            <button type="button" class="btn btn-primary" data-add-cart-id="${escapeHTML(product.id)}">
+              <i class="fa-solid fa-cart-plus"></i> Add to Cart
+            </button>
+            <a class="btn btn-outline" href="product-details.html?id=${encodeURIComponent(product.id)}">View Details</a>
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderFeaturedProducts() {
+    const grid = select("#featured-product-grid");
+    if (!grid) return;
+
+    const products = Array.isArray(window.PRODUCTS)
+      ? window.PRODUCTS.filter(
+          (product) => product.featured && product.availability !== false
+        ).slice(0, 4)
+      : [];
+
+    if (products.length === 0) {
+      grid.innerHTML = '<p class="empty-state">Featured products are temporarily unavailable. <a href="products.html">View all products</a>.</p>';
+      return;
+    }
+
+    grid.innerHTML = products.map(createFeaturedProductCard).join("");
+  }
+
+  function initializeFeaturedProductActions() {
+    document.addEventListener("click", (event) => {
+      const quickViewButton = event.target.closest("[data-quick-view-id]");
+      if (quickViewButton) {
+        openQuickView(quickViewButton.dataset.quickViewId);
+      }
+    });
+  }
+
 
   function initializeMobileBottomNavigation() {
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
@@ -347,6 +437,8 @@
     initializeNewsletter();
     initializeQuickView();
     initializeGlobalSearch();
+    renderFeaturedProducts();
+    initializeFeaturedProductActions();
     initializeMobileBottomNavigation();
     initializeImageFallbacks();
     initializeLazyFrames();
