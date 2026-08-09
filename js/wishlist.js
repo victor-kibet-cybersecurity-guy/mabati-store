@@ -144,7 +144,7 @@
         .join(", ");
     }
 
-    return "Confirm gauge";
+    return "";
   }
 
   function getDefaultLength(product) {
@@ -848,7 +848,9 @@
         ? product.colours
             .slice(0, 4)
             .join(", ")
-        : "Confirm available colours";
+        : "";
+
+    const gaugeText = getGaugeText(product);
 
     const dateAdded =
       formatDate(wishlistItem.addedAt);
@@ -858,7 +860,7 @@
       "",
       `I am interested in ${product.name}.`,
       `Category: ${product.category || "Roofing product"}`,
-      `Gauge: ${getGaugeText(product)}`,
+      gaugeText ? `Gauge: ${gaugeText}` : null,
       `Price: ${formatMoney(product.price)} ${
         product.priceUnit || ""
       }`,
@@ -867,8 +869,8 @@
         "Please confirm"
       }`,
       "",
-      "Please send me the current price, available colours, lengths and delivery information."
-    ].join("\n");
+      `Please send me the current price, ${colours ? "available colours, " : ""}lengths and delivery information.`
+    ].filter((line) => line !== null).join("\n");
 
     return `
       <article
@@ -955,24 +957,14 @@
 
           </h2>
 
-          <div class="product-meta">
-
-            <span>
-              <i class="fa-solid fa-layer-group"></i>
-              Gauge: ${escapeHTML(
-                getGaugeText(product)
-              )}
-            </span>
-
-            <span>
-              <i class="fa-solid fa-paint-roller"></i>
-              ${escapeHTML(
-                product.finish ||
-                "Standard finish"
-              )}
-            </span>
-
-          </div>
+          ${
+            gaugeText || product.finish
+              ? `<div class="product-meta">
+                  ${gaugeText ? `<span><i class="fa-solid fa-layer-group"></i> Gauge: ${escapeHTML(gaugeText)}</span>` : ""}
+                  ${product.finish ? `<span><i class="fa-solid fa-paint-roller"></i> ${escapeHTML(product.finish)}</span>` : ""}
+                </div>`
+              : ""
+          }
 
           ${
             colours

@@ -1588,11 +1588,8 @@ const PRODUCTS = [
     "oldPrice": null,
     "priceUnit": "per metre",
     "priceNote": "A 10-metre gutter run is available at KSh 3,500. Confirm the gutter profile before ordering.",
-    "gauge": [
-      "30",
-      "28"
-    ],
-    "defaultGauge": "30",
+    "gauge": [],
+    "defaultGauge": "",
     "availableLengths": [
       1,
       2,
@@ -1603,7 +1600,7 @@ const PRODUCTS = [
     "effectiveWidth": null,
     "totalWidth": null,
     "colours": [],
-    "finish": "Glossy or matte",
+    "finish": "",
     "coating": "Pre-painted galvanized steel",
     "image": "images/rainwater-gutter.jpeg?v=20260809-1",
     "gallery": [
@@ -1643,16 +1640,13 @@ const PRODUCTS = [
     "oldPrice": null,
     "priceUnit": "per 10-metre run",
     "priceNote": "Support brackets, outlets, bends and downpipes are sold separately.",
-    "gauge": [
-      "30",
-      "28"
-    ],
-    "defaultGauge": "30",
+    "gauge": [],
+    "defaultGauge": "",
     "availableLengths": [],
     "effectiveWidth": null,
     "totalWidth": null,
     "colours": [],
-    "finish": "Glossy or matte",
+    "finish": "",
     "coating": "Pre-painted galvanized steel",
     "image": "images/rainwater-gutter.jpeg?v=20260809-1",
     "gallery": [
@@ -1691,19 +1685,13 @@ const PRODUCTS = [
     "oldPrice": null,
     "priceUnit": "per piece",
     "priceNote": "Confirm size and gutter compatibility.",
-    "gauge": [
-      "N/A"
-    ],
-    "defaultGauge": "N/A",
+    "gauge": [],
+    "defaultGauge": "",
     "availableLengths": [],
     "effectiveWidth": null,
     "totalWidth": null,
-    "colours": [
-      "Black",
-      "Galvanized Silver",
-      "Colour matched"
-    ],
-    "finish": "Standard",
+    "colours": [],
+    "finish": "",
     "coating": "Protected metal",
     "image": "images/gutter-support.jpeg?v=20260809-1",
     "gallery": [
@@ -1739,21 +1727,13 @@ const PRODUCTS = [
     "oldPrice": null,
     "priceUnit": "per piece",
     "priceNote": "Confirm length, diameter, colour and fittings.",
-    "gauge": [
-      "N/A"
-    ],
-    "defaultGauge": "N/A",
+    "gauge": [],
+    "defaultGauge": "",
     "availableLengths": [],
     "effectiveWidth": null,
     "totalWidth": null,
-    "colours": [
-      "Charcoal Grey",
-      "Coffee Brown",
-      "Brick Red",
-      "Forest Green",
-      "Galvanized Silver"
-    ],
-    "finish": "Standard",
+    "colours": [],
+    "finish": "",
     "coating": "Colour-coated or galvanized",
     "image": "images/rainwater-downpipe.jpeg?v=20260809-1",
     "gallery": [
@@ -1790,21 +1770,13 @@ const PRODUCTS = [
     "oldPrice": null,
     "priceUnit": "per piece",
     "priceNote": "State the exact fitting required when ordering.",
-    "gauge": [
-      "N/A"
-    ],
-    "defaultGauge": "N/A",
+    "gauge": [],
+    "defaultGauge": "",
     "availableLengths": [],
     "effectiveWidth": null,
     "totalWidth": null,
-    "colours": [
-      "Charcoal Grey",
-      "Coffee Brown",
-      "Brick Red",
-      "Forest Green",
-      "Galvanized Silver"
-    ],
-    "finish": "Standard",
+    "colours": [],
+    "finish": "",
     "coating": "Colour-coated or galvanized",
     "image": "images/gutter-bend-elbow-end-cap.jpeg?v=20260809-1",
     "gallery": [
@@ -1841,21 +1813,13 @@ const PRODUCTS = [
     "oldPrice": null,
     "priceUnit": "per piece",
     "priceNote": "Confirm gutter profile and downpipe size.",
-    "gauge": [
-      "N/A"
-    ],
-    "defaultGauge": "N/A",
+    "gauge": [],
+    "defaultGauge": "",
     "availableLengths": [],
     "effectiveWidth": null,
     "totalWidth": null,
-    "colours": [
-      "Charcoal Grey",
-      "Coffee Brown",
-      "Brick Red",
-      "Forest Green",
-      "Galvanized Silver"
-    ],
-    "finish": "Standard",
+    "colours": [],
+    "finish": "",
     "coating": "Colour-coated or galvanized",
     "image": "images/gutter-outlet.jpeg?v=20260809-1",
     "gallery": [

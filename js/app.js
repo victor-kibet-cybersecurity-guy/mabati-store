@@ -248,8 +248,12 @@
 
   function createFeaturedProductCard(product) {
     const gauges = Array.isArray(product.gauge)
-      ? product.gauge.join(", ")
-      : product.gauge || product.defaultGauge || "Confirm";
+      ? product.gauge.filter((gauge) => gauge && gauge !== "N/A").join(", ")
+      : product.gauge && product.gauge !== "N/A"
+        ? product.gauge
+        : product.defaultGauge && product.defaultGauge !== "N/A"
+          ? product.defaultGauge
+          : "";
     const colours = Array.isArray(product.colours)
       ? product.colours.slice(0, 3).join(", ")
       : product.colours || "Confirm available colours";
@@ -281,10 +285,14 @@
           <h3 class="product-title">
             <a href="product-details.html?id=${encodeURIComponent(product.id)}">${escapeHTML(product.name)}</a>
           </h3>
-          <div class="product-meta">
-            <span><i class="fa-solid fa-layer-group"></i> Gauge: ${escapeHTML(gauges)}</span>
-            <span><i class="fa-solid fa-paint-roller"></i> ${escapeHTML(product.finish || "Roofing finish")}</span>
-          </div>
+          ${
+            gauges || product.finish
+              ? `<div class="product-meta">
+                  ${gauges ? `<span><i class="fa-solid fa-layer-group"></i> Gauge: ${escapeHTML(gauges)}</span>` : ""}
+                  ${product.finish ? `<span><i class="fa-solid fa-paint-roller"></i> ${escapeHTML(product.finish)}</span>` : ""}
+                </div>`
+              : ""
+          }
           ${colours ? `<p class="product-colours"><strong>Colours:</strong> ${escapeHTML(colours)}</p>` : ""}
           <div class="product-price">
             <span class="current-price">${formatProductPrice(product)}</span>

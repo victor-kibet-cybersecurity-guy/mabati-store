@@ -409,10 +409,14 @@
                 : ""
             }
 
-            <span>
-              <i class="fa-solid fa-paint-roller"></i>
-              ${escapeHTML(product.finish || "Standard finish")}
-            </span>
+            ${
+              product.finish
+                ? `<span>
+                    <i class="fa-solid fa-paint-roller"></i>
+                    ${escapeHTML(product.finish)}
+                  </span>`
+                : ""
+            }
 
           </div>
 
